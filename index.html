@@ -12,7 +12,7 @@
     <title>NY Phil Data</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
 
     <!-- Theme CSS -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="css/new-age.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,37 +68,54 @@
     </nav>
 
     <header>
-    <section>
+    <section class="cta">
+    <div class = "cta-content">
     <div class = "container">
     <h2>TITLE OF PROJECT</h2>
     <p> ****brief introduction of our project purpose</p>
+    
+    </div>
+    
+    </div>
+<div class="col-sm-12 text-center">
+    <a class="btn btn-default btn-outline page-scroll" aria-label="Left Align" href = "#timeline"> 
+    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+    
     </div>
     </section>
 
-	<section class="cta">
-        <div class="cta-content">
+	<section class="cta" id ="timeline">
+        <div class="cta-content" >
             <div class="container">
                 <h2>NY Philharmonic Timeline</h2>
                 <p>Explanation</p>
                 <a href="#contact" class="btn btn-outline btn-xl page-scroll">View Timeline</a>
                 
             </div>
+        
         </div>
-        <div class="overlay"></div>
+        <div class="col-sm-12 text-center">
+    <a class="btn btn-default btn-outline page-scroll" aria-label="Left Align" href = "#conductors"> 
+    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+    </div>
     </section>
 
-	<section class="cta">
+	<section class="cta" id="conductors">
         <div class="cta-content">
             <div class="container">
                 <h2>Early Conductors and Financial Impact</h2>
                 <p>Caption</p>
                 <a href="#contact" class="btn btn-outline btn-xl page-scroll">View Data Visualizations</a>
             </div>
+            
         </div>
-        <div class="overlay"></div>
+       <div class="col-sm-12 text-center">
+    <a class="btn btn-default btn-outline page-scroll" aria-label="Left Align" href = "#venues"> 
+    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+    </div>
     </section>
 
-     <section class="cta">
+     <section class="cta" id="venues"> 
         <div class="cta-content">
             <div class="container">
                 <h2>NY Venues and U.S. Tour Maps</h2>
@@ -106,7 +123,7 @@
                 <a href="#contact" class="btn btn-outline btn-xl page-scroll">View Maps</a>
             </div>
         </div>
-        <div class="overlay"></div>
+       
     </section>
 
     <section id="contact" class="contact bg-primary">
