@@ -303,7 +303,7 @@ section.cta {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/bg-cta.jpg');
-  padding: 250px 0;
+  padding: 200px 0;
 }
 section.cta .cta-content {
   position: relative;
@@ -447,4 +447,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+#arrow_button{
+  margin-top:150px;
 }
