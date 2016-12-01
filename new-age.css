@@ -219,7 +219,7 @@ header .device-container .screen img {
   }
 }
 section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 section h2 {
   font-size: 50px;
@@ -303,12 +303,11 @@ section.cta {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/bg-cta.jpg');
-  /*padding: 225px 0;*/
+  padding: 200px 0;
 }
 section.cta .cta-content {
   position: relative;
   z-index: 1;
-  padding: 160px 0px;
 }
 section.cta .cta-content h2 {
   margin-top: 0;
@@ -450,4 +449,6 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
-
+#arrow_button{
+  margin-top:150px;
+}
