@@ -4,8 +4,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -22,49 +21,49 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Temporary navbar container fix until Bootstrap 4 is patched -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
 
 </head>
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            Menu <i class="fa fa-bars"></i>
+        </button>
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
+            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#download">Download</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Features</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
     <header>
@@ -84,7 +83,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
+                                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -100,7 +99,7 @@
     <section id="download" class="download bg-primary text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 offset-md-2">
                     <h2 class="section-heading">Discover what all the buzz is about!</h2>
                     <p>Our app is available on any mobile device! Download now to get started!</p>
                     <div class="badges">
@@ -114,23 +113,19 @@
 
     <section id="features" class="features">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
-                        <hr>
-                    </div>
-                </div>
+            <div class="section-heading text-center">
+                <h2>Unlimited Features, Unlimited Fun</h2>
+                <p class="text-muted">Check out what you can do with this app theme!</p>
+                <hr>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="device-container">
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
+                                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -138,17 +133,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="feature-item">
                                     <i class="icon-screen-smartphone text-primary"></i>
                                     <h3>Device Mockups</h3>
                                     <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="feature-item">
                                     <i class="icon-camera text-primary"></i>
                                     <h3>Flexible Use</h3>
@@ -157,14 +152,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="feature-item">
                                     <i class="icon-present text-primary"></i>
                                     <h3>Free to Use</h3>
                                     <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6">
                                 <div class="feature-item">
                                     <i class="icon-lock-open text-primary"></i>
                                     <h3>Open Source</h3>
@@ -192,13 +187,13 @@
         <div class="container">
             <h2>We <i class="fa fa-heart"></i> new friends!</h2>
             <ul class="list-inline list-social">
-                <li class="social-twitter">
+                <li class="list-inline-item social-twitter">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                 </li>
-                <li class="social-facebook">
+                <li class="list-inline-item social-facebook">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                 </li>
-                <li class="social-google-plus">
+                <li class="list-inline-item social-google-plus">
                     <a href="#"><i class="fa fa-google-plus"></i></a>
                 </li>
             </ul>
@@ -209,23 +204,22 @@
         <div class="container">
             <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
             <ul class="list-inline">
-                <li>
+                <li class="list-inline-item">
                     <a href="#">Privacy</a>
                 </li>
-                <li>
+                <li class="list-inline-item">
                     <a href="#">Terms</a>
                 </li>
-                <li>
+                <li class="list-inline-item">
                     <a href="#">FAQ</a>
                 </li>
             </ul>
         </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- Bootstrap core JavaScript -->
     <script src="lib/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/tether/tether.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
