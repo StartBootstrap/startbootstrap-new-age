@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - New Age v4.0.0-alpha (http://startbootstrap.com/template-overviews/new-age)
  * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 html,
 body {
@@ -43,6 +43,32 @@ p {
   line-height: 1.5;
   margin-bottom: 20px; }
 
+section {
+  padding: 100px 0; }
+  section h2 {
+    font-size: 50px; }
+
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #222222; }
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #222222; }
+
+img::selection {
+  color: white;
+  background: transparent; }
+
+img::-moz-selection {
+  color: white;
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #222222; }
+
 #mainNav {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -68,19 +94,17 @@ p {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 11px; }
+    #mainNav .navbar-nav > li > a.active {
+      color: #fdcc52 !important;
+      background-color: transparent; }
+      #mainNav .navbar-nav > li > a.active:hover {
+        background-color: transparent; }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
     color: #222222; }
     #mainNav .navbar-nav > li > a:hover,
     #mainNav .navbar-nav > li > a:focus:hover {
       color: #fdcc52; }
-  #mainNav .navbar-nav > li.active > a,
-  #mainNav .navbar-nav > li.active > a:focus {
-    color: #fdcc52 !important;
-    background-color: transparent; }
-    #mainNav .navbar-nav > li.active > a:hover,
-    #mainNav .navbar-nav > li.active > a:focus:hover {
-      background-color: transparent; }
   @media (min-width: 992px) {
     #mainNav {
       background-color: transparent;
@@ -109,67 +133,60 @@ p {
           #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
             color: #fdcc52; } }
 
-header {
+header.masthead {
   position: relative;
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
   background: url("../img/bg-pattern.png"), #7b4397;
-  /* fallback for old browsers */
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white; }
-  header .header-content {
+  header.masthead .header-content {
     text-align: center;
     padding: 150px 0 50px;
     position: relative; }
-    header .header-content .header-content-inner {
+    header.masthead .header-content .header-content-inner {
       position: relative;
       max-width: 500px;
       margin: 0 auto; }
-      header .header-content .header-content-inner h1 {
+      header.masthead .header-content .header-content-inner h1 {
         margin-top: 0;
         margin-bottom: 30px;
         font-size: 30px; }
-      header .header-content .header-content-inner .list-badges {
+      header.masthead .header-content .header-content-inner .list-badges {
         margin-bottom: 25px; }
-        header .header-content .header-content-inner .list-badges img {
+        header.masthead .header-content .header-content-inner .list-badges img {
           height: 50px;
           margin-bottom: 25px; }
-  header .device-container {
+  header.masthead .device-container {
     max-width: 300px;
     margin: 0 auto 100px; }
-    header .device-container .screen img {
+    header.masthead .device-container .screen img {
       border-radius: 3px; }
   @media (min-width: 768px) {
-    header {
+    header.masthead {
       min-height: 100%; }
-      header .header-content {
+      header.masthead .header-content {
         text-align: left;
         padding: 0;
-        height: 100vh; }
-        header .header-content .header-content-inner {
+        height: 100vh;
+        min-height: 600px; }
+        header.masthead .header-content .header-content-inner {
           max-width: none;
           margin: 0;
           position: absolute;
           top: 50%;
           transform: translateY(-50%); }
-          header .header-content .header-content-inner h1 {
+          header.masthead .header-content .header-content-inner h1 {
             font-size: 35px; }
-      header .device-container {
+      header.masthead .device-container {
         max-width: none;
         max-height: calc(100vh - 100px);
         margin: 100px auto 0; } }
   @media (min-width: 992px) {
-    header .header-content .header-content-inner h1 {
+    header.masthead .header-content .header-content-inner h1 {
       font-size: 50px; } }
-
-section {
-  padding: 100px 0; }
-  section h2 {
-    font-size: 50px; }
 
 section.download {
   padding: 150px 0;
@@ -332,24 +349,3 @@ footer {
 .btn-xl {
   padding: 15px 45px;
   font-size: 11px; }
-
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #222222; }
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: #222222; }
-
-img::selection {
-  color: white;
-  background: transparent; }
-
-img::-moz-selection {
-  color: white;
-  background: transparent; }
-
-body {
-  webkit-tap-highlight-color: #222222; }

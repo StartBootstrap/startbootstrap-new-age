@@ -1,0 +1,32 @@
+// Styling for the call to action section
+section.cta {
+    position: relative;
+    @include background-cover;
+    background-position: center;
+    background-image: url('../img/bg-cta.jpg');
+    padding: 250px 0;
+    .cta-content {
+        position: relative;
+        z-index: 1;
+        h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+            max-width: 450px;
+            font-size: 50px;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 80px;
+            }
+        }
+    }
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: fade-out(black, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

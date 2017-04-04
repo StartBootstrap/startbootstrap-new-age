@@ -1,0 +1,39 @@
+// Bootstrap overrides for this template
+.bg-primary {
+    background: $theme-primary;
+    background: -webkit-linear-gradient($theme-primary, darken($theme-primary, 5%));
+    background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+}
+
+.text-primary {
+    color: $theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-outline {
+    color: white;
+    border-color: white;
+    border: 1px solid;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: white;
+        background-color: $theme-primary;
+        border-color: $theme-primary;
+    }
+}
+
+.btn {
+    @include alt-font;
+    border-radius: 300px;
+}
+
+.btn-xl {
+    padding: 15px 45px;
+    font-size: 11px;
+}

@@ -1,0 +1,78 @@
+// Styling for the navbar
+#mainNav {
+    background-color: white;
+    border-color: fade-out($gray-darker, 0.95);
+    @include transition-all;
+    @include heading-font;
+    .navbar-brand {
+        @include heading-font;
+        color: $theme-primary;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .navbar-toggler {
+        font-size: 12px;
+        color: $gray-darker;
+        padding: 8px 10px;
+    }
+    .navbar-nav {
+        > li {
+            > a {
+                @include alt-font;
+                font-size: 11px;
+                &.active {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            > a,
+            > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        background-color: transparent;
+        border-color: transparent;
+        .navbar-brand {
+            color: fade(white, 70%);
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+        .navbar-nav > li > a,
+        .navbar-nav > li > a:focus {
+            color: fade-out(white, 0.3);
+            &:hover {
+                color: white;
+            }
+        }
+        &.navbar-shrink {
+            background-color: white;
+            border-color: fade-out($gray-darker, 0.9);
+            .navbar-brand {
+                color: $gray-darker;
+                &:hover,
+                &:focus {
+                    color: $theme-primary;
+                }
+            }
+            .navbar-nav > li > a,
+            .navbar-nav > li > a:focus {
+                color: $gray-darker;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+        }
+    }
+}
