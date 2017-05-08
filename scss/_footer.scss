@@ -1,9 +1,9 @@
 // Styling for the footer
 footer {
-    background-color: $gray-darker;
     padding: 25px 0;
-    color: fade-out(white, 0.7);
     text-align: center;
+    color: fade-out(white, .7);
+    background-color: $gray-darker;
     p {
         font-size: 12px;
         margin: 0;
@@ -13,7 +13,7 @@ footer {
         li {
             a {
                 font-size: 12px;
-                color: fade-out(white, 0.7);
+                color: fade-out(white, .7);
                 &:hover,
                 &:focus,
                 &:active,

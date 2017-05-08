@@ -1,13 +1,13 @@
 // Styling for the features section
 section.features {
     .section-heading {
+        margin-bottom: 100px;
         h2 {
             margin-top: 0;
         }
         p {
             margin-bottom: 0;
         }
-        margin-bottom: 100px;
     }
     .device-container,
     .feature-item {
@@ -21,8 +21,8 @@ section.features {
         }
     }
     .feature-item {
-        text-align: center;
         margin-bottom: 100px;
+        text-align: center;
         h3 {
             font-size: 30px;
         }

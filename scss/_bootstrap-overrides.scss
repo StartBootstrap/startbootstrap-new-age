@@ -16,24 +16,24 @@
 
 .btn-outline {
     color: white;
-    border-color: white;
     border: 1px solid;
+    border-color: white;
     &:hover,
     &:focus,
     &:active,
     &.active {
         color: white;
-        background-color: $theme-primary;
         border-color: $theme-primary;
+        background-color: $theme-primary;
     }
 }
 
 .btn {
-    @include alt-font;
     border-radius: 300px;
+    @include alt-font;
 }
 
 .btn-xl {
-    padding: 15px 45px;
     font-size: 11px;
+    padding: 15px 45px;
 }

@@ -12,13 +12,13 @@ section.contact {
         margin-bottom: 0;
         li {
             a {
-                display: block;
-                height: 80px;
-                width: 80px;
-                line-height: 80px;
                 font-size: 40px;
-                border-radius: 100%;
+                line-height: 80px;
+                display: block;
+                width: 80px;
+                height: 80px;
                 color: white;
+                border-radius: 100%;
             }
             &.social-twitter {
                 a {

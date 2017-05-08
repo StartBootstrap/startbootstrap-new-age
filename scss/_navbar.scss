@@ -1,12 +1,12 @@
 // Styling for the navbar
 #mainNav {
+    border-color: fade-out($gray-darker, .95);
     background-color: white;
-    border-color: fade-out($gray-darker, 0.95);
     @include transition-all;
     @include heading-font;
     .navbar-brand {
-        @include heading-font;
         color: $theme-primary;
+        @include heading-font;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -14,14 +14,14 @@
     }
     .navbar-toggler {
         font-size: 12px;
-        color: $gray-darker;
         padding: 8px 10px;
+        color: $gray-darker;
     }
     .navbar-nav {
         > li {
             > a {
-                @include alt-font;
                 font-size: 11px;
+                @include alt-font;
                 &.active {
                     color: $theme-primary !important;
                     background-color: transparent;
@@ -40,8 +40,8 @@
         }
     }
     @media (min-width: 992px) {
-        background-color: transparent;
         border-color: transparent;
+        background-color: transparent;
         .navbar-brand {
             color: fade(white, 70%);
             &:hover,
@@ -51,14 +51,14 @@
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: fade-out(white, 0.3);
+            color: fade-out(white, .3);
             &:hover {
                 color: white;
             }
         }
         &.navbar-shrink {
+            border-color: fade-out($gray-darker, .9);
             background-color: white;
-            border-color: fade-out($gray-darker, 0.9);
             .navbar-brand {
                 color: $gray-darker;
                 &:hover,

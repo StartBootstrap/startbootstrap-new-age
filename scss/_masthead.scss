@@ -1,25 +1,25 @@
 // Styling for the masthead
 header.masthead {
     position: relative;
+    overflow-y: hidden;
     width: 100%;
     min-height: auto;
-    overflow-y: hidden;
-    background: url("../img/bg-pattern.png"), $theme-secondary;
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     color: white;
+    background: url('../img/bg-pattern.png'), $theme-secondary;
+    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     .header-content {
-        text-align: center;
-        padding: 150px 0 50px;
         position: relative;
+        padding: 150px 0 50px;
+        text-align: center;
         .header-content-inner {
             position: relative;
             max-width: 500px;
             margin: 0 auto;
             h1 {
+                font-size: 30px;
                 margin-top: 0;
                 margin-bottom: 30px;
-                font-size: 30px;
             }
             .list-badges {
                 margin-bottom: 25px;
@@ -40,15 +40,15 @@ header.masthead {
     @media (min-width: 768px) {
         min-height: 100%;
         .header-content {
-            text-align: left;
-            padding: 0;
             height: 100vh;
             min-height: 600px;
+            padding: 0;
+            text-align: left;
             .header-content-inner {
-                max-width: none;
-                margin: 0;
                 position: absolute;
                 top: 50%;
+                max-width: none;
+                margin: 0;
                 transform: translateY(-50%);
                 h1 {
                     font-size: 35px;
