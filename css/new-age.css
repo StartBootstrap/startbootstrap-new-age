@@ -369,6 +369,18 @@ section.contact ul.list-social li.social-google-plus a {
 section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
+section.contact ul.list-social li.social-instagram a {
+  background-color: #cd486b;
+}
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #af405f;
+}
+section.contact ul.list-social li.social-linkedin a {
+  background-color: #007bb6;
+}
+section.contact ul.list-social li.social-linkedin a:hover {
+  background-color: #006faf;
+}
 footer {
   background-color: #222222;
   padding: 25px 0;
