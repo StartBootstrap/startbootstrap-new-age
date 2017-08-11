@@ -26,58 +26,41 @@
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
 
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-
 </head>
 
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu <i class="fa fa-bars"></i>
         </button>
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#download">Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#download">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <header class="masthead">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl">Start Now for Free!</a>
-                        </div>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+                        <a href="#download" class="btn btn-outline btn-xl">Start Now for Free!</a>
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-lg-5 my-auto">
                     <div class="device-container">
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
@@ -99,7 +82,7 @@
     <section class="download bg-primary text-center" id="download">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
+                <div class="col-md-8 mx-auto">
                     <h2 class="section-heading">Discover what all the buzz is about!</h2>
                     <p>Our app is available on any mobile device! Download now to get started!</p>
                     <div class="badges">
@@ -119,7 +102,7 @@
                 <hr>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 my-auto">
                     <div class="device-container">
                         <div class="device-mockup iphone6_plus portrait white">
                             <div class="device">
@@ -133,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 my-auto">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-6">
@@ -219,7 +202,7 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->

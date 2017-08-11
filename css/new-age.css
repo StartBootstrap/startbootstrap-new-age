@@ -48,27 +48,6 @@ section {
   section h2 {
     font-size: 50px; }
 
-::-moz-selection {
-  color: white;
-  background: #222222;
-  text-shadow: none; }
-
-::selection {
-  color: white;
-  background: #222222;
-  text-shadow: none; }
-
-img::selection {
-  color: white;
-  background: transparent; }
-
-img::-moz-selection {
-  color: white;
-  background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #222222; }
-
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
@@ -135,58 +114,38 @@ body {
 
 header.masthead {
   position: relative;
-  overflow-y: hidden;
   width: 100%;
-  min-height: auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
   color: white;
   background: url("../img/bg-pattern.png"), #7b4397;
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430); }
   header.masthead .header-content {
-    position: relative;
-    padding: 150px 0 50px;
+    max-width: 500px;
+    margin-bottom: 100px;
     text-align: center; }
-    header.masthead .header-content .header-content-inner {
-      position: relative;
-      max-width: 500px;
-      margin: 0 auto; }
-      header.masthead .header-content .header-content-inner h1 {
-        font-size: 30px;
-        margin-top: 0;
-        margin-bottom: 30px; }
-      header.masthead .header-content .header-content-inner .list-badges {
-        margin-bottom: 25px; }
-        header.masthead .header-content .header-content-inner .list-badges img {
-          height: 50px;
-          margin-bottom: 25px; }
+    header.masthead .header-content h1 {
+      font-size: 30px; }
   header.masthead .device-container {
-    max-width: 300px;
-    margin: 0 auto 100px; }
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto; }
     header.masthead .device-container .screen img {
       border-radius: 3px; }
-  @media (min-width: 768px) {
-    header.masthead {
-      min-height: 100%; }
-      header.masthead .header-content {
-        height: 100vh;
-        min-height: 600px;
-        padding: 0;
-        text-align: left; }
-        header.masthead .header-content .header-content-inner {
-          position: absolute;
-          top: 50%;
-          max-width: none;
-          margin: 0;
-          transform: translateY(-50%); }
-          header.masthead .header-content .header-content-inner h1 {
-            font-size: 35px; }
-      header.masthead .device-container {
-        max-width: none;
-        max-height: calc(100vh - 100px);
-        margin: 100px auto 0; } }
   @media (min-width: 992px) {
-    header.masthead .header-content .header-content-inner h1 {
-      font-size: 50px; } }
+    header.masthead {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead .header-content {
+        margin-bottom: 0;
+        text-align: left; }
+        header.masthead .header-content h1 {
+          font-size: 50px; }
+      header.masthead .device-container {
+        max-width: 325px; } }
 
 section.download {
   position: relative;
@@ -218,7 +177,7 @@ section.features .section-heading {
 
 section.features .device-container,
 section.features .feature-item {
-  max-width: 300px;
+  max-width: 325px;
   margin: 0 auto; }
 
 section.features .device-container {
@@ -228,21 +187,19 @@ section.features .device-container {
       margin-bottom: 0; } }
 
 section.features .feature-item {
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center; }
   section.features .feature-item h3 {
     font-size: 30px; }
   section.features .feature-item i {
     font-size: 80px;
+    display: block;
+    margin-bottom: 15px;
     background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
     background: linear-gradient(to left, #7b4397, #dc2430);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-
-@media (min-width: 992px) {
-  section.features .device-container,
-  section.features .feature-item {
-    max-width: none; } }
 
 section.cta {
   position: relative;
