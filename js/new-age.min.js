@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - New Age v4.0.0-beta (http://startbootstrap.com/template-overviews/new-age)
+ * Start Bootstrap - New Age v4.0.0-beta (https://startbootstrap.com/template-overviews/new-age)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
