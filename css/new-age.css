@@ -306,3 +306,13 @@ footer {
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+  .masthead .mb-5 {
+    margin-top:115px;
+  }
+  .masthead .device-container {
+    margin-top:115px;
+  }
+}
