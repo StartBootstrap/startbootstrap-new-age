@@ -14,6 +14,7 @@
  *		- iPad2 (black/white, portrait/landscape)
  *		- iMac
  *		- MacBook Pro (retina model)
+ *		- Nexus 6
  *		- Nexus 7
  *		- Lumia 920
  *		- Microsoft Surface
@@ -707,6 +708,36 @@
 
 .device-mockup.lumia920.landscape > .device > .screen {
 	top: 12.2641509%; bottom: 12.2641509%; left: 10.5403012%; right: 18.6005314%;
+}
+
+/* Nexus 6 */
+.device-mockup.nexus_6,
+.device-mockup.nexus_6.portrait {
+  padding-bottom: 194.188862%;
+}
+
+.device-mockup.nexus_6.landscape {
+  padding-bottom: 51.496259%;
+}
+
+.device-mockup.nexus_6 > .device,
+.device-mockup.nexus_6.black > .device,
+.device-mockup.nexus_6.portrait.black > .device {
+  background-image: url("nexus_6/nexus_6_port.png");
+}
+
+.device-mockup.nexus_6.landscape > .device,
+.device-mockup.nexus_6.landscape.black > .device {
+  background-image: url("nexus_6/nexus_6_land.png");
+}
+
+.device-mockup.nexus_6 > .device > .screen,
+.device-mockup.nexus_6.portrait > .device > .screen {
+  top: 10.2%; bottom: 10.1%; left: 6.3%; right: 6.4%;
+}
+
+.device-mockup.nexus_6.landscape > .device > .screen {
+  top: 6.6%; bottom: 6.2%; left: 10.15%; right: 10%;
 }
 
 
