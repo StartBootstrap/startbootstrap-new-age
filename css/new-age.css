@@ -407,13 +407,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #f8f9fa;
+  background: -webkit-linear-gradient(#f8f9fa, #f8f9fa);
+  background: linear-gradient(#f8f9fa, #f8f9fa);
 }
 
 .text-primary {
-  color: #fdcc52;
+  color: #2409A1!important;
 }
 
 .no-gutter > [class*='col-'] {
@@ -444,3 +444,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 11px;
   padding: 15px 45px;
 }
+
+.my-box {
+                -webkit-box-shadow: 0 .375rem 1.25rem 0 rgba(61,66,80,.18);
+                box-shadow: 0 .375rem 1.25rem 0 rgba(61,66,80,.18);
+                border-radius: .625rem;
+            }
