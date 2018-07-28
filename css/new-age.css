@@ -389,7 +389,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     text-align: center;
     background: #d8d8d8;
     border-radius: 50%;
-    z-index: 9999999;
+    z-index: 99999;
 }
 
 .tooltipstered:before {
