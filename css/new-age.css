@@ -448,6 +448,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     border: 1px solid #e5e7f1;
     padding: 12px;
     box-sizing: border-box;
+    background: #f5f6f9;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 1px 1px #4c559af7;
 }
 
 .subscription-panel .subscription-panel-subitem {
