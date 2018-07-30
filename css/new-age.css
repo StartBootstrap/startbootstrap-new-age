@@ -149,6 +149,20 @@ header.masthead-team {
   }
 }
 
+header.masthead-science {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background-image: url("../img/testimonial-graphic-desktop.svg"), url("../img/header-science.jpg");
+  background-position: center center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 header.masthead .header-content, header.masthead-team .header-content{
   max-width: 400px;
   margin-bottom: 100px;
