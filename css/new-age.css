@@ -175,8 +175,10 @@ header.masthead .header-content, header.masthead-team .header-content{
 }
 
 header.masthead .header-content h1, header.masthead-team .header-content h1 {
-  font-size: 50px;
-    font-family: Alice;
+  font-size: 57px;
+  font-family: Alice;
+  text-shadow: 0 0 5px #160857;
+  font-weight: 400;
 }
 
 @media (min-width: 992px) {
@@ -715,4 +717,9 @@ section#contact .form-group input, section#contact .form-group textarea {
     font-size: 1.75rem;
     margin-bottom: 0;
     font-weight: 400;
+}
+
+.center-img {
+    width: 30%;
+    height: auto;
 }
