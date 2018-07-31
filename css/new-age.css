@@ -124,7 +124,7 @@ header.masthead {
   background-size: cover;
 }
 
-@media only screen and (max-width: 792px) {
+@media only screen and (max-width: 792px) and (min-width: 400px) {
   header.masthead {
     background-image: url("../img/hero-graphic-mobile.svg"), url("../img/header-mobile.jpg");
     background-position: top left;
@@ -132,6 +132,12 @@ header.masthead {
   }
 }
 
+@media only screen and (max-width: 400px) {
+    header.masthead {
+        background-position: top, bottom 250px left;
+        background-image: url("../img/hero-graphic-mobile.svg"), url("../img/header-mobile.jpg");
+    }
+}
 
 
 header.masthead-team {
@@ -166,6 +172,20 @@ header.masthead-science {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+header.masthead .header-content, header.masthead-team .header-content {
+  max-width: 400px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+    header.masthead .header-content {
+        max-width: 400px;
+        margin-top: 300px;
+        text-align: center;
+    }
 }
 
 header.masthead .header-content, header.masthead-team .header-content{
