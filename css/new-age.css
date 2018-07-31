@@ -116,8 +116,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background-image: url("../img/testimonial-graphic-desktop.svg"), url("../img/header.jpg");
-  background-position: center center;
+  background-image: url("../img/testimonial-graphic-desktop.svg"), url("../img/header-desktop.jpg");
+  background-position: top left;
   color: #fff;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -126,8 +126,9 @@ header.masthead {
 
 @media only screen and (max-width: 992px) {
   header.masthead {
-    background-image: url("../img/testimonial-graphic-tablet.svg"), url("../img/header.jpg");
-    background-position: center bottom -100px, top -300px right;
+    background-image: url("../img/hero-graphic-mobile.svg"), url("../img/header-mobile.jpg");
+    background-position: top left;
+    background-size: cover, contain;
   }
 }
 
@@ -169,7 +170,7 @@ header.masthead-science {
 
 header.masthead .header-content, header.masthead-team .header-content{
   max-width: 400px;
-  margin-bottom: 100px;
+  margin-top: 300px;
   text-align: center;
 }
 
