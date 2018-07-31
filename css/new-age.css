@@ -124,7 +124,7 @@ header.masthead {
   background-size: cover;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 792px) {
   header.masthead {
     background-image: url("../img/hero-graphic-mobile.svg"), url("../img/header-mobile.jpg");
     background-position: top left;
