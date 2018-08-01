@@ -465,7 +465,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     margin-left: 50px;
 }
 
-.testimonials .testimonial-item img, .team .team-item img {
+.testimonials .testimonial-item img {
     max-width: 12rem;
     box-shadow: 0 5px 5px 0 #adb5bd;
 }
@@ -491,8 +491,6 @@ section#contact .form-group input, section#contact .form-group textarea {
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
-
 
 .timeline {
   position: relative;
@@ -705,7 +703,31 @@ section#contact .form-group input, section#contact .form-group textarea {
 }
 
 .center-img {
-    width: 30%;
+    width: 35%;
     height: auto;
     min-width: 250px;
 }
+
+.team-member h4 {
+    font-weight: 400;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+}
+
+ul.social-buttons {
+  margin-bottom: 0; }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529; }
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: #fed136; }
