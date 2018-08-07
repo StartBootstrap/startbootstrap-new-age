@@ -396,18 +396,7 @@
 }
 
 .device-mockup.iphone_x.landscape > .device > .screen {
-    top: 5.97%; bottom: 5.97%; left: 11.38%; right: 11.58%;
-}
-
-.device-mockup.iphone_x > .device > .button,
-.device-mockup.iphone_x.portrait > .device > .button {
-	display: block;
-    top: 89.9%; bottom: 3.2%; left: 43%; right: 43%;
-}
-
-.device-mockup.iphone_x.landscape > .device > .button {
-	display: block;
-	top: 43%; bottom: 43%; left: 89.9%; right: 3.2%;
+    top: 5.97%; bottom: 5.97%; left: 3%; right: 3%;
 }
 
 /* iPad */
