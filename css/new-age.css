@@ -145,6 +145,12 @@ header.masthead .header-content h1 {
   }
 }
 
+@media (max-width: 380px) {
+    header.masthead {
+      padding-bottom: 20px; 
+    }
+}
+
 @media (max-width: 420px) {
     header.masthead {
         background-image: url("../img/hero-graphic-mobile.svg"), url("../img/header-mobile.jpg");
