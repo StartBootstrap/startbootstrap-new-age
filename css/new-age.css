@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: sofia_proregular, "Open Sans", sans-serif, Helvetica, Arial;
 }
 
 a {
@@ -31,29 +31,52 @@ hr.light {
 }
 
 h1,
-h2,
-h3,
+h2 {
+  font-family: sofia_probold, "Open Sans", sans-serif, Helvetica, Arial;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: sofia_promedium, "Open Sans", sans-serif, Helvetica, Arial;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: sofia_proregular, "Open Sans", sans-serif, Helvetica, Arial;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
+h1 {
+  font-size: 6.5em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
 p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.75em;
   margin-bottom: 20px;
 }
 
 section {
   padding: 100px 0;
-}
-
-section h2 {
-  font-size: 50px;
-  font-weight: 600;
 }
 
 section .section-heading {
@@ -66,15 +89,14 @@ section .section-heading {
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #24326e;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight: 600;
+  font-size: 2em;
   letter-spacing: 1px;
 }
 
@@ -90,7 +112,6 @@ section .section-heading {
 
 #mainNav .navbar-nav > li > a {
   font-size: 11px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -169,12 +190,6 @@ header.masthead .header-content {
   text-align: center;
 }
 
-header.masthead .header-content h1 {
-  font-size: 56px;
-  font-family: Alice;
-  font-weight: 600;
-}
-
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -186,13 +201,11 @@ header.masthead .header-content h1 {
     margin-bottom: 0;
     text-align: left;
   }
-  header.masthead .header-content h1 {
-    font-size: 50px;
-  }
 }
 
 section.problem {
   padding-bottom: 50px;
+  background-color: #ece6e8;
 }
 
 section.symptoms {
@@ -200,6 +213,11 @@ section.symptoms {
 }
 section.symptoms .symptom {
     margin-top: 100px;
+}
+
+section.symptoms h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 section.symptoms .symptom .text-wrapper {
@@ -257,6 +275,7 @@ footer {
 footer p {
   font-size: 12px;
   margin: 0;
+  font-weight: 200;
 }
 
 footer ul {
@@ -302,14 +321,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn {
   border-radius: 300px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .btn-xl {
-  font-size: 11px;
-  padding: 15px 45px;
+  font-size: 12px;
+  padding: 15px 35px;
 }
 
 .btn-primary {
@@ -353,7 +371,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   position: relative;
   float: right;
   width: 100%;
-  padding: 0 20px 0 100px;
+  padding: 0 20px 0 60px;
   text-align: left;
   line-height: 1;
 
@@ -396,7 +414,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
-  padding: 0 20px 0 100px;
+  padding: 0 20px 0 60px;
   text-align: left;
   line-height: 1;
 }
@@ -495,7 +513,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 60px;
     line-height: 1;
   }
   .timeline > li .timeline-image {
@@ -535,8 +553,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 
 .biomarker {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 20%;
   margin-bottom: 5px;
-  line-height: 1.2;
+  line-height: 1.5em;
 }
