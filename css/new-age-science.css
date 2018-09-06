@@ -3,16 +3,21 @@ header.masthead {
   width: 100%;
   color: #000;
   background-image: url("../img/header-desktop-science.jpg");
-  background-size: cover
+  height: 90vh;
 }
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 25vh;
+    height: 70vh;
     min-height: 200px;
     padding-top: 100px;
     padding-bottom: 0;
   }
+}
+
+#mainNav .navbar-nav > li > a,
+#mainNav .navbar-nav > li > a:focus {
+  color: #222222;
 }
 
 section.stress-types .stress-box {

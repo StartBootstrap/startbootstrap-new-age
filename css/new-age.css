@@ -98,6 +98,7 @@ section .section-heading {
   font-weight: 600;
   font-size: 2em;
   letter-spacing: 1px;
+  font-family: sofia_probold;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -111,7 +112,8 @@ section .section-heading {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 11px;
+  font-size: 12px;
+  font-family: sofia_proregular;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -548,7 +550,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-top: 1px solid black;
   content: '';
   transform: translate(-10px, -5px);
-  width: 40px;
+  width: 25px;
   display: inline-block;
 }
 
