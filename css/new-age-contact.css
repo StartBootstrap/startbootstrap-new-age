@@ -1,0 +1,24 @@
+header.masthead {
+  position: relative;
+  width: 100%;
+  color: #000;
+  background-image: url("../img/header-desktop-science.jpg");
+  background-size: cover
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 25vh;
+    min-height: 200px;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+
+section#contact .form-group textarea.form-control {
+    height: 238px;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 20px;
+}

@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: sofia_proregular, "Open Sans", sans-serif, Helvetica, Arial;
+  font-family: sofia_prolight, "Open Sans", sans-serif, Helvetica, Arial;
 }
 
 a {
@@ -46,7 +46,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-family: sofia_proregular, "Open Sans", sans-serif, Helvetica, Arial;
+  font-family: sofia_prolight, "Open Sans", sans-serif, Helvetica, Arial;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -241,6 +241,7 @@ section.prices {
   padding-top: 50px;
   padding-bottom: 0;
 }
+
 section.prices .price-separator {
   min-height: 350px;
   background-image: url("../img/scattered-radishes.jpg");
@@ -554,7 +555,23 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .biomarker {
   font-size: 16px;
-  padding-left: 20%;
+  padding-left: 20px;
   margin-bottom: 5px;
   line-height: 1.5em;
+}
+
+section.testimonials .testimonial-item {
+  height: 100%;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  line-height: 1;
+
+  box-sizing: border-box;
+  background: #f0f7f5;
+  border: 14px solid #fff;
+}
+
+section.testimonials .testimonial-item img {
+    width: 200px;
+    height: 200px;
 }

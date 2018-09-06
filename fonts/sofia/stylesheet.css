@@ -6,6 +6,7 @@
     font-family: 'sofia_probold';
     src: url('sofiaprobold-webfont.eot');
     src: url('sofiaprobold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sofiaprobold-webfont.woff2') format('woff2'),
          url('sofiaprobold-webfont.woff') format('woff'),
          url('sofiaprobold-webfont.svg#sofia_probold') format('svg');
     font-weight: normal;
@@ -20,8 +21,24 @@
     font-family: 'sofia_proregular';
     src: url('sofiaproregular-webfont.eot');
     src: url('sofiaproregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sofiaproregular-webfont.woff2') format('woff2'),
          url('sofiaproregular-webfont.woff') format('woff'),
          url('sofiaproregular-webfont.svg#sofia_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sofia_prolight';
+    src: url('sofia_pro_light-webfont.eot');
+    src: url('sofia_pro_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sofia_pro_light-webfont.woff2') format('woff2'),
+         url('sofia_pro_light-webfont.woff') format('woff'),
+         url('sofia_pro_light-webfont.svg#sofia_prolight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -34,6 +51,7 @@
     font-family: 'sofia_promedium';
     src: url('sofia_pro_medium-webfont.eot');
     src: url('sofia_pro_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sofia_pro_medium-webfont.woff2') format('woff2'),
          url('sofia_pro_medium-webfont.woff') format('woff'),
          url('sofia_pro_medium-webfont.svg#sofia_promedium') format('svg');
     font-weight: normal;
