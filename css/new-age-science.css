@@ -2,7 +2,7 @@ header.masthead {
   position: relative;
   width: 100%;
   color: #000;
-  background-image: url("../img/header-desktop-science.jpg");
+  background-image: url("../img/header-mobile-science.jpg");
   height: 90vh;
 }
 
@@ -12,6 +12,9 @@ header.masthead {
     min-height: 200px;
     padding-top: 100px;
     padding-bottom: 0;
+    background-image: url("../img/header-desktop-science.jpg");
+    background-size: cover;
+    background-position: 50%, left;
   }
 }
 

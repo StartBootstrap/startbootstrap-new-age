@@ -210,7 +210,7 @@ header.masthead {
   header.masthead {
     background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
     background-position: top left;
-    background-size: cover, contain;
+    background-size: cover, 110%;
   }
 }
 

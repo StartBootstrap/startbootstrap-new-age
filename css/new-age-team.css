@@ -3,7 +3,8 @@ header.masthead {
   width: 100%;
   color: #000;
   background-image: url("../img/header-desktop-team.jpg");
-  background-size: cover
+  background-size: cover;
+  height: 90vh;
 }
 
 @media (min-width: 992px) {
