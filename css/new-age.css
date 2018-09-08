@@ -5,11 +5,7 @@ body {
 }
 
 body {
-<<<<<<< HEAD
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
-=======
   font-family: sofia_prolight, "Open Sans", sans-serif, Helvetica, Arial;
->>>>>>> new-website
 }
 
 a {
@@ -40,20 +36,11 @@ h3,
 h4,
 h5,
 h6 {
-<<<<<<< HEAD
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-=======
   font-family: sofia_prolight, "Open Sans", sans-serif, Helvetica, Arial;
->>>>>>> new-website
   font-weight: 200;
   letter-spacing: 1px;
 }
 
-<<<<<<< HEAD
-p {
-  font-size: 18px;
-  line-height: 1.5;
-=======
 h1 {
   font-size: 2.5em;
 }
@@ -95,7 +82,6 @@ h4 {
 p {
   font-size: 18px;
   line-height: 1.75em;
->>>>>>> new-website
   margin-bottom: 20px;
 }
 
@@ -113,21 +99,15 @@ section h2 {
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
   color: #2409A1;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 600;
   letter-spacing: 1px;
-<<<<<<< HEAD
-  font-size: 1.85rem;
-=======
   font-family: sofia_probold;
->>>>>>> new-website
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -141,13 +121,8 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a {
-<<<<<<< HEAD
-  font-size: 11px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-=======
   font-size: 12px;
   font-family: sofia_proregular;
->>>>>>> new-website
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -176,15 +151,6 @@ header.masthead {
   width: 100%;
   padding-top: 150px;
   padding-bottom: 100px;
-<<<<<<< HEAD
-  color: white;
-  background-image: url("../img/testimonial-graphic-desktop.svg"), url("../img/header-desktop.jpg");
-  background-position: top left;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-=======
   color: #000;
   background-image: url("../img/header-desktop.jpg");
   background-size: cover;
@@ -225,7 +191,6 @@ header.masthead {
     margin-top: 400px;
     color: white;
   }
->>>>>>> new-website
 }
 
 header.masthead .header-content {
@@ -320,60 +285,6 @@ section.download .badges .badge-link img {
   }
 }
 
-<<<<<<< HEAD
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-  }
-}
-
-section.features .section-heading {
-  margin-bottom: 100px;
-}
-
-section.features .section-heading h2 {
-  margin-top: 0;
-}
-
-section.features .section-heading p {
-  margin-bottom: 0;
-}
-
-section.features .device-container,
-section.features .feature-item {
-  max-width: 325px;
-  margin: 0 auto;
-}
-
-section.features .device-container {
-  margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  section.features .device-container {
-    margin-bottom: 0;
-  }
-}
-
-section.features .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-section.features .feature-item h3 {
-  font-size: 30px;
-}
-
-section.features .feature-item i {
-  font-size: 80px;
-  display: block;
-  margin-bottom: 15px;
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-=======
 section.prices {
   padding-top: 50px;
   padding-bottom: 0px;
@@ -396,7 +307,6 @@ section.prices .price-box {
   margin-left: 25px;
   max-width: 90%;
   padding: 20px 20px 20px 40px;
->>>>>>> new-website
 }
 
 section.contact {
@@ -839,19 +749,12 @@ section#contact .form-group input, section#contact .form-group textarea {
     line-height: 1;
 }
 
-<<<<<<< HEAD
-.features-item-title {
-    font-size: 1.75rem;
-    margin-bottom: 0;
-    font-weight: 400;
-=======
 .biomarker:before {
   border-top: 1px solid black;
   content: '';
   transform: translate(-10px, -5px);
   width: 25px;
   display: inline-block;
->>>>>>> new-website
 }
 
 .center-img {
@@ -860,32 +763,7 @@ section#contact .form-group input, section#contact .form-group textarea {
     min-width: 250px;
 }
 
-<<<<<<< HEAD
-.team-member h4 {
-    font-weight: 400;
-    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size: 1.5rem;
-}
-
-ul.social-buttons {
-  margin-bottom: 0; }
-  ul.social-buttons li a {
-    font-size: 20px;
-    line-height: 40px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    color: white;
-    border-radius: 100%;
-    outline: none;
-    background-color: #212529; }
-    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
-=======
-.biomarker {
+.biomarker new-age-science.css{
   font-size: 16px;
   padding-left: 20px;
   margin-bottom: 5px;
@@ -907,4 +785,3 @@ section.testimonials .testimonial-item img {
     width: 200px;
     height: 200px;
 }
->>>>>>> new-website
