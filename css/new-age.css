@@ -90,7 +90,7 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.75em;
   margin-bottom: 20px;
 }
@@ -297,9 +297,9 @@ section.symptoms .symptom .img-wrapper {
 }
 
 section.prices {
-  background: #D4F7F0;
   padding-top: 50px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
+  background: #ece6e8;
 }
 
 section.prices .price-separator {
@@ -315,7 +315,7 @@ section.prices .price-box {
   box-sizing: border-box;
   background: #f0f7f5;
   border: 14px solid #fff;
-  margin-left: 30px;
+  margin-left: 25px;
   max-width: 90%;
   padding: 20px 20px 20px 40px;
 }
@@ -389,6 +389,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 12px;
   padding: 15px 35px;
+}
+
+@media (max-width: 420px) {
+  .btn-xl {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
 }
 
 .btn-primary {
