@@ -4,6 +4,7 @@ header.masthead {
   color: #000;
   background-image: url("../img/header-mobile-science.jpg");
   height: 90vh;
+  background-position: center center;
 }
 
 @media (min-width: 992px) {
