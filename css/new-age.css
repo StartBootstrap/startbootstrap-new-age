@@ -5,7 +5,11 @@ body {
 }
 
 body {
+<<<<<<< HEAD
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+=======
+  font-family: sofia_prolight, "Open Sans", sans-serif, Helvetica, Arial;
+>>>>>>> new-website
 }
 
 a {
@@ -36,14 +40,62 @@ h3,
 h4,
 h5,
 h6 {
+<<<<<<< HEAD
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+=======
+  font-family: sofia_prolight, "Open Sans", sans-serif, Helvetica, Arial;
+>>>>>>> new-website
   font-weight: 200;
   letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
 p {
   font-size: 18px;
   line-height: 1.5;
+=======
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+
+@media (min-width: 600px) {
+  h1 {
+  font-size: 6.5em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.75em;
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.75em;
+>>>>>>> new-website
   margin-bottom: 20px;
 }
 
@@ -71,7 +123,11 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 600;
   letter-spacing: 1px;
+<<<<<<< HEAD
   font-size: 1.85rem;
+=======
+  font-family: sofia_probold;
+>>>>>>> new-website
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -85,8 +141,13 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a {
+<<<<<<< HEAD
   font-size: 11px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+=======
+  font-size: 12px;
+  font-family: sofia_proregular;
+>>>>>>> new-website
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -115,6 +176,7 @@ header.masthead {
   width: 100%;
   padding-top: 150px;
   padding-bottom: 100px;
+<<<<<<< HEAD
   color: white;
   background-image: url("../img/testimonial-graphic-desktop.svg"), url("../img/header-desktop.jpg");
   background-position: top left;
@@ -122,12 +184,55 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+=======
+  color: #000;
+  background-image: url("../img/header-desktop.jpg");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 992px){
+  header.masthead {
+    background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
+    background-position: top left;
+    background-size: cover, 110%;
+  }
+}
+
+@media (max-width: 420px) {
+    header.masthead {
+        background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
+    }
+
+    header.masthead .header-content h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 400px) {
+    header.masthead {
+        background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
+    }
+
+    header.masthead .header-content h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 992px) {
+  header.masthead .header-content {
+    margin-top: 400px;
+    color: white;
+  }
+>>>>>>> new-website
 }
 
 header.masthead .header-content {
   max-width: 400px;
   margin-top: 100px;
   text-align: center;
+
 }
 
 header.masthead .header-content h1 {
@@ -215,6 +320,7 @@ section.download .badges .badge-link img {
   }
 }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
   section.download h2 {
     font-size: 70px;
@@ -267,6 +373,30 @@ section.features .feature-item i {
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+=======
+section.prices {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  background: #ece6e8;
+}
+
+section.prices .price-separator {
+  min-height: 350px;
+  background-image: url("../img/scattered-radishes.jpg");
+  background-size: cover;
+  background-position: -10px, right;
+  height:100%;
+}
+
+section.prices .price-box {
+  z-index: 100;
+  box-sizing: border-box;
+  background: #f0f7f5;
+  border: 14px solid #fff;
+  margin-left: 25px;
+  max-width: 90%;
+  padding: 20px 20px 20px 40px;
+>>>>>>> new-website
 }
 
 section.contact {
@@ -383,6 +513,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
+}
+
+@media (max-width: 420px) {
+  .btn-xl {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
 }
 
 .btn-primary {
@@ -702,10 +839,19 @@ section#contact .form-group input, section#contact .form-group textarea {
     line-height: 1;
 }
 
+<<<<<<< HEAD
 .features-item-title {
     font-size: 1.75rem;
     margin-bottom: 0;
     font-weight: 400;
+=======
+.biomarker:before {
+  border-top: 1px solid black;
+  content: '';
+  transform: translate(-10px, -5px);
+  width: 25px;
+  display: inline-block;
+>>>>>>> new-website
 }
 
 .center-img {
@@ -714,6 +860,7 @@ section#contact .form-group input, section#contact .form-group textarea {
     min-width: 250px;
 }
 
+<<<<<<< HEAD
 .team-member h4 {
     font-weight: 400;
     font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -737,3 +884,27 @@ ul.social-buttons {
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #fed136; }
+=======
+.biomarker {
+  font-size: 16px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  line-height: 1.5em;
+}
+
+section.testimonials .testimonial-item {
+  height: 100%;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  line-height: 1;
+
+  box-sizing: border-box;
+  background: #f0f7f5;
+  border: 14px solid #fff;
+}
+
+section.testimonials .testimonial-item img {
+    width: 200px;
+    height: 200px;
+}
+>>>>>>> new-website
