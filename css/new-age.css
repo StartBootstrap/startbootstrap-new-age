@@ -302,14 +302,6 @@ section.prices {
   background: #ece6e8;
 }
 
-section.prices .price-separator {
-  min-height: 350px;
-  background-image: url("../img/scattered-radishes.jpg");
-  background-size: cover;
-  background-position: -10px, right;
-  height:100%;
-}
-
 section.prices .price-box {
   z-index: 100;
   box-sizing: border-box;
