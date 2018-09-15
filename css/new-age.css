@@ -202,23 +202,12 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: #000;
-  background-image: url("../img/header-desktop.jpg");
+  background-image: url("../img/header-desktop.png");
   background-size: cover;
-}
-
-@media only screen and (max-width: 992px){
-  header.masthead {
-    background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
-    background-position: top left;
-    background-size: cover, 110%;
-  }
+  background-position: bottom right;
 }
 
 @media (max-width: 420px) {
-    header.masthead {
-        background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
-    }
-
     header.masthead .header-content h1 {
         font-size: 48px;
         font-weight: 600;
@@ -226,21 +215,10 @@ header.masthead {
 }
 
 @media (max-width: 400px) {
-    header.masthead {
-        background-image: url("../img/hero-header-mobile.svg"), url("../img/header-mobile.jpg");
-    }
-
     header.masthead .header-content h1 {
         font-size: 48px;
         font-weight: 600;
     }
-}
-
-@media (max-width: 992px) {
-  header.masthead .header-content {
-    margin-top: 400px;
-    color: white;
-  }
 }
 
 header.masthead .header-content {
