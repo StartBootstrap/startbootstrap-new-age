@@ -246,6 +246,11 @@ section.problem {
   background-color: #ece6e8;
 }
 
+section.how {
+  padding-bottom: 50px;
+  background-color: #ece6e8;
+}
+
 section.symptoms {
   padding-top: 50px;
 }
@@ -266,6 +271,7 @@ section.symptoms .symptom .text-wrapper {
 
 section.symptoms .symptom .img-pane {
     z-index: 100;
+    align-content: center;
 }
 
 section.symptoms .symptom .img-wrapper {
@@ -273,6 +279,7 @@ section.symptoms .symptom .img-wrapper {
     width: 103.8%;
     display: inline-block;
 }
+
 
 section.prices {
   padding-top: 50px;
@@ -600,7 +607,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 section.testimonials .testimonial-item {
   height: 100%;
   padding: 0 10px 0 10px;
-  text-align: center;
+  text-align: left;
   line-height: 1;
 
   box-sizing: border-box;
@@ -611,4 +618,11 @@ section.testimonials .testimonial-item {
 section.testimonials .testimonial-item img {
     width: 200px;
     height: 200px;
+    margin-left: auto;
+	  margin-right: auto;
+	  display: block;
+}
+
+section.testimonials .testimonial-item h2 {
+  text-align: center;
 }
