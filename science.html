@@ -77,7 +77,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
           </ul>
         </div>
-        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav-science');" class="btn btn-primary btn-xl js-scroll-trigger" data-celery="5b605561e0ae9114006ceb2d">Start now! <s>£389</s> £299</button>
+        
+        <!-- Load Stripe.js on your website. -->
+        <script src="https://js.stripe.com/v3"></script>
+        
+        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav-science');" class="btn btn-primary btn-xl js-scroll-trigger" id="checkout-button-sku_FRfTxfbA84vw4D">Start now! £299</button>
+
+        <!--<div id="error-message"></div>-->
+
+        <script>
+          var stripe = Stripe('pk_live_Tpqyx6LucKqeqh82BzC45FnG');
+
+          var checkoutButton = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D');
+          checkoutButton.addEventListener('click', function () {
+            stripe.redirectToCheckout({
+              items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
+              successUrl: window.location.protocol + '//www.akesio.com/index.html',
+              cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
+            })
+            .then(function (result) {
+              if (result.error) {
+                var displayError = document.getElementById('error-message');
+                displayError.textContent = result.error.message;
+              }
+            });
+          });
+        </script>
       </div>
     </nav>
 
