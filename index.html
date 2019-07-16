@@ -92,84 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!--<div id="error-message"></div>-->
 
-          <script>
-            var stripe = Stripe('pk_live_Tpqyx6LucKqeqh82BzC45FnG');
-
-            var checkoutButton1 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_1');
-            checkoutButton1.addEventListener('click', function () {
-              stripe.redirectToCheckout({
-                items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-                successUrl: window.location.protocol + '//www.akesio.com/index.html',
-                cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-              })
-              .then(function (result) {
-                if (result.error) {
-                  var displayError = document.getElementById('error-message');
-                  displayError.textContent = result.error.message;
-                }
-              });
-            });
-
-            var checkoutButton2 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_2');
-            checkoutButton2.addEventListener('click', function () {
-              stripe.redirectToCheckout({
-                items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-                successUrl: window.location.protocol + '//www.akesio.com/index.html',
-                cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-              })
-              .then(function (result) {
-                if (result.error) {
-                  var displayError = document.getElementById('error-message');
-                  displayError.textContent = result.error.message;
-                }
-              });
-            });
-
-            var checkoutButton3 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_3');
-            checkoutButton3.addEventListener('click', function () {
-              stripe.redirectToCheckout({
-                items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-                successUrl: window.location.protocol + '//www.akesio.com/index.html',
-                cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-              })
-              .then(function (result) {
-                if (result.error) {
-                  var displayError = document.getElementById('error-message');
-                  displayError.textContent = result.error.message;
-                }
-              });
-            });
-
-            var checkoutButton4 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_4');
-            checkoutButton4.addEventListener('click', function () {
-              stripe.redirectToCheckout({
-                items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-                successUrl: window.location.protocol + '//www.akesio.com/index.html',
-                cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-              })
-              .then(function (result) {
-                if (result.error) {
-                  var displayError = document.getElementById('error-message');
-                  displayError.textContent = result.error.message;
-                }
-              });
-            });
-
-            var checkoutButton5 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_5');
-            checkoutButton5.addEventListener('click', function () {
-              stripe.redirectToCheckout({
-                items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-                successUrl: window.location.protocol + '//www.akesio.com/index.html',
-                cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-              })
-              .then(function (result) {
-                if (result.error) {
-                  var displayError = document.getElementById('error-message');
-                  displayError.textContent = result.error.message;
-                }
-              });
-            });
-          </script>
+          
         
         
         
@@ -547,6 +470,89 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123016313-1"></script>
+
+
+    <script>
+        var stripe = Stripe('pk_live_Tpqyx6LucKqeqh82BzC45FnG');
+
+        var checkoutButton1 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_1');
+        checkoutButton1.addEventListener('click', function () {
+          stripe.redirectToCheckout({
+            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
+            successUrl: window.location.protocol + '//www.akesio.com/index.html',
+            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
+          })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+        });
+
+        var checkoutButton2 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_2');
+        checkoutButton2.addEventListener('click', function () {
+          stripe.redirectToCheckout({
+            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
+            successUrl: window.location.protocol + '//www.akesio.com/index.html',
+            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
+          })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+        });
+
+        var checkoutButton3 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_3');
+        checkoutButton3.addEventListener('click', function () {
+          stripe.redirectToCheckout({
+            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
+            successUrl: window.location.protocol + '//www.akesio.com/index.html',
+            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
+          })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+        });
+
+        var checkoutButton4 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_4');
+        checkoutButton4.addEventListener('click', function () {
+          stripe.redirectToCheckout({
+            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
+            successUrl: window.location.protocol + '//www.akesio.com/index.html',
+            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
+          })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+        });
+
+        var checkoutButton5 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_5');
+        checkoutButton5.addEventListener('click', function () {
+          stripe.redirectToCheckout({
+            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
+            successUrl: window.location.protocol + '//www.akesio.com/index.html',
+            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
+          })
+          .then(function (result) {
+            if (result.error) {
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          });
+        });
+      </script>
+
+
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
