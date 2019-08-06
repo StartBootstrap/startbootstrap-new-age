@@ -88,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
      
         
-        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav');" class="btn btn-primary btn-xl js-scroll-trigger" onclick="window.location.href = 'https://gumroad.com/l/keQDK';">Start now! <s>£389</s> £299</button>
+        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger">Start now! <s>£389</s> £299</button>
 
           <!--<div id="error-message"></div>-->
 
@@ -192,7 +192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <p class="biomarker-title">3. Advanced medical report</p>
                   <p class="biomarker-title">4. Your personalised health plan</p>
                   <br>
-                  <button onclick="ga('send', 'event', 'Buy', 'click', 'Price');" class="btn btn-primary btn-xl js-scroll-trigger" onclick="window.location.href = 'https://gumroad.com/l/keQDK';">Join Us! <s>£389</s> £299</button>
+                  <button onclick="ga('send', 'event', 'Buy', 'click', 'Price'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger" >Join Us! <s>£389</s> £299</button>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -353,7 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <br><br>
         <div class="row">
           <div class="col-lg-12 text-center">
-            <button onclick="ga('send', 'event', 'Buy', 'click', 'Steps');" class="btn btn-primary btn-xl js-scroll-trigger" id="checkout-button-sku_FRfTxfbA84vw4D_3">Join Us! <s>£389</s> £299</button>
+            <button onclick="ga('send', 'event', 'Buy', 'click', 'Steps'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger">Join Us! <s>£389</s> £299</button>
           </div>
         </div>
       </div>
@@ -411,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="col-lg-12">
             <br>
             <!-- <button onclick="ga('send', 'event', 'Buy', 'click', 'Testimonials');" class="btn btn-primary btn-xl js-scroll-trigger" data-celery="5b605561e0ae9114006ceb2d">Join us! <s>£389</s> £299</button> -->
-            <button onclick="ga('send', 'event', 'Buy', 'click', 'Testimonials');" class="btn btn-primary btn-xl js-scroll-trigger" id="checkout-button-sku_FRfTxfbA84vw4D_4">Join Us! <s>£389</s> £299</button>
+            <button onclick="ga('send', 'event', 'Buy', 'click', 'Testimonials'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger">Join Us! <s>£389</s> £299</button>
           </div>
         </div>
       </div>
@@ -472,85 +472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123016313-1"></script>
 
 
-    <script>
-        var stripe = Stripe('pk_live_Tpqyx6LucKqeqh82BzC45FnG');
-
-        var checkoutButton1 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_1');
-        checkoutButton1.addEventListener('click', function () {
-          stripe.redirectToCheckout({
-            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-            successUrl: window.location.protocol + '//www.akesio.com/index.html',
-            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-          })
-          .then(function (result) {
-            if (result.error) {
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
-          });
-        });
-
-        var checkoutButton2 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_2');
-        checkoutButton2.addEventListener('click', function () {
-          stripe.redirectToCheckout({
-            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-            successUrl: window.location.protocol + '//www.akesio.com/index.html',
-            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-          })
-          .then(function (result) {
-            if (result.error) {
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
-          });
-        });
-
-        var checkoutButton3 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_3');
-        checkoutButton3.addEventListener('click', function () {
-          stripe.redirectToCheckout({
-            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-            successUrl: window.location.protocol + '//www.akesio.com/index.html',
-            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-          })
-          .then(function (result) {
-            if (result.error) {
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
-          });
-        });
-
-        var checkoutButton4 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_4');
-        checkoutButton4.addEventListener('click', function () {
-          stripe.redirectToCheckout({
-            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-            successUrl: window.location.protocol + '//www.akesio.com/index.html',
-            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-          })
-          .then(function (result) {
-            if (result.error) {
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
-          });
-        });
-
-        var checkoutButton5 = document.getElementById('checkout-button-sku_FRfTxfbA84vw4D_5');
-        checkoutButton5.addEventListener('click', function () {
-          stripe.redirectToCheckout({
-            items: [{sku: 'sku_FRfTxfbA84vw4D', quantity: 1}],
-            successUrl: window.location.protocol + '//www.akesio.com/index.html',
-            cancelUrl: window.location.protocol + '//www.akesio.com/index.html',
-          })
-          .then(function (result) {
-            if (result.error) {
-              var displayError = document.getElementById('error-message');
-              displayError.textContent = result.error.message;
-            }
-          });
-        });
-      </script>
-
+   
 
 
     <script>
