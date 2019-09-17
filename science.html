@@ -78,12 +78,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ul>
         </div>
         
-        <!-- Load Stripe.js on your website. -->
-        <script src="https://js.stripe.com/v3"></script>
-        
-        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav-science'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger" >Start now! £299</button>
-
-        <!--<div id="error-message"></div>-->
+        <!-- Load octobat-beanie.js on your website. -->
+        <script src="https://cdn.jsdelivr.net/gh/0ctobat/octobat-beanie.js@latest/dist/octobat-beanie.min.js"></script>
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav');" class="beanie-button btn btn-primary btn-xl js-scroll-trigger" role="link">
+          Buy!
+        </button>
+        <div id="error-message"></div>
 
         
       </div>
@@ -456,7 +457,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div><br><br>
         <div class="text-center">
-          <button onclick="ga('send', 'event', 'Buy', 'click', 'Hormones'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger" >Buy now! <s>£389</s> £299</button>
+          <!-- <button onclick="ga('send', 'event', 'Buy', 'click', 'Hormones'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger" >Buy now! <s>£389</s> £299</button> -->
+          <button onclick="ga('send', 'event', 'Buy', 'click', 'Hormones');" class="beanie-button btn btn-primary btn-xl js-scroll-trigger" role="link">
+            Buy!
+          </button>
         </div>
       </div>
     </section>
@@ -481,7 +485,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <br>
-      <button onclick="ga('send', 'event', 'Buy', 'click', 'WhyMeasure'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger">Get Help for Only <s>£389</s> £299</button>
+      <!-- <button onclick="ga('send', 'event', 'Buy', 'click', 'WhyMeasure'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger">Get Help for Only <s>£389</s> £299</button> -->
+      <button onclick="ga('send', 'event', 'Buy', 'click', 'WhyMeasure');" class="beanie-button btn btn-primary btn-xl js-scroll-trigger" role="link">
+        Buy!
+      </button>
     </section>
 
     <footer>
