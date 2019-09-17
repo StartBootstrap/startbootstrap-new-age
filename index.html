@@ -75,6 +75,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
           </ul>
         </div>
+        
+        <!-- Load octobat-beanie.js on your website. -->
+        <script src="https://cdn.jsdelivr.net/gh/0ctobat/octobat-beanie.js@latest/dist/octobat-beanie.min.js"></script>
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav');" class="beanie-button btn btn-primary btn-xl js-scroll-trigger" role="link">
+          Buy!
+        </button>
+        <div id="error-message"></div>
+        
+        
 <!--        <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav');" class="btn btn-primary btn-xl js-scroll-trigger" data-celery="5b605561e0ae9114006ceb2d">Start now! <s>£389</s> £299</button>-->
         
         
@@ -84,15 +94,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         
           <!-- Load Stripe.js on your website. -->
-          <script src="https://js.stripe.com/v3"></script>
+          <!--<script src="https://js.stripe.com/v3"></script>
 
      
         
         <button onclick="ga('send', 'event', 'Buy', 'click', 'Nav'); window.location.href = 'https://gumroad.com/l/keQDK';" class="btn btn-primary btn-xl js-scroll-trigger">Start now! <s>£389</s> £299</button>
+        -->
 
           <!--<div id="error-message"></div>-->
 
-          
+        
+       
         
         
         
@@ -433,7 +445,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
     </footer>
-
+    
+    <!-- Octobat Beanie -->
+    <script type="text/javascript">
+     var beanie = OctobatBeanie("oc_test_pkey_ZzBf3kjQvdTEDlKSfHWdLAtt");
+     [].forEach.call( document.querySelectorAll('beanie-button'), function ( beanieButton ) {
+        beanieButton.addEventListener('click', function () {
+          beanieButton.disabled = "disabled";
+          // When the customer clicks on the button, redirect
+          // them to Beanie.
+          beanie.redirectToBeanie({
+            items: [{sku: 'sku_FpHMid45PoBxpm'}],
+            configurationId: 'oc_beanie_cc_1568710683gf0y4ba65c2f'
+          })
+          .then(function (result) {
+            beanieButton.removeAttribute("disabled");
+            if (result.error) {
+              // If redirectToBeanie fails due to a browser or network
+              // error, display the localized error message to your customer.
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message;
+            }
+          }).catch(function(error) {
+            beanieButton.removeAttribute("disabled");
+            // If redirectToBeanie can’t be triggered because of invalid parameters
+            // or implementation, error, display a generic error message to your customer,
+            // and report the error to the console for debugging purposes, or send it to Sentry
+            // Sentry.log(error)
+            console.log(error)
+            var displayError = document.getElementById('error-message');
+            displayError.textContent = "Implementation error, please contact website administrator";
+          })  
+        }, false );
+     });
+    </script>
+  
+  
     <!-- Crisp -->
     <script type="text/javascript">
         window.$crisp=[];window.CRISP_WEBSITE_ID="d741949e-3874-46ab-b901-cfced5884429";
