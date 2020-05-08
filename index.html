@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>New Age - Start Bootstrap Theme</title>
+  <title>TourMe</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,12 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Tour Me</a>
+      <form id="content">
+  <input type="text" name="input" class="input" id="search-input">
+  <button type="reset" class="search" id="search-btn"></button>
+</form>
+
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -41,13 +46,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            <a class="nav-link js-scroll-trigger" href="#download">DOWNLOAD</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            <a class="nav-link js-scroll-trigger" href="#features">HOW IT WORKS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">WHAT'S THE CRAIC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -59,7 +67,7 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+            <h1 class="mb-5">Don’t miss out on the best craic in Dublin!</h1>
             <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
           </div>
         </div>
@@ -69,7 +77,7 @@
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                  <img src="img/Dublin_lead_image.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -86,7 +94,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">Discover what all the buzz is about!</h2>
+          <h2 class="section-heading">Discover what all TourMe is about!</h2>
           <p>Our app is available on any mobile device! Download now to get started!</p>
           <div class="badges">
             <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
@@ -100,8 +108,8 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
-        <h2>Unlimited Features, Unlimited Fun</h2>
-        <p class="text-muted">Check out what you can do with this app theme!</p>
+        <h2>Get to know us!</h2>
+        <p class="text-muted">All the benefits of a guided tour, the freedom to drive yourself.</p>
         <hr>
       </div>
       <div class="row">
@@ -111,7 +119,7 @@
               <div class="device">
                 <div class="screen">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                  <img src="img/places.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -125,16 +133,16 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>Device Mockups</h3>
-                  <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                  <i class="icon fab fa-angellist"></i>
+                  <h3>Dublin favorite!</h3>
+                  <p class="text-muted">Millions of users ❤ TourMe!</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="icon-camera text-primary"></i>
-                  <h3>Flexible Use</h3>
-                  <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                  <i class="icon fas fa-map-signs fa-3x"></i>
+                  <h3>Best places to go!</h3>
+                  <p class="text-muted">Stories, local tips and directions, based on your location!</p>
                 </div>
               </div>
             </div>
@@ -143,14 +151,14 @@
                 <div class="feature-item">
                   <i class="icon-present text-primary"></i>
                   <h3>Free to Use</h3>
-                  <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                  <p class="text-muted">Join our comunity! </p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="icon-lock-open text-primary"></i>
-                  <h3>Open Source</h3>
-                  <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                   <i class="icon fas fa-map-marked-alt fa-4x"></i>
+                  <h3> Play automatically</h3>
+                  <p class="text-muted">Check in now!</p>
                 </div>
               </div>
             </div>
@@ -160,25 +168,92 @@
     </div>
   </section>
 
+
   <section class="cta">
     <div class="cta-content">
       <div class="container">
-        <h2>Stop waiting.<br>Start building.</h2>
+        <h2>TourMe APP.<br>Start your jorney, now!</h2>
         <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
       </div>
     </div>
     <div class="overlay"></div>
   </section>
+  <!-- Portfolio -->
+<section class="content-section" id="portfolio">
+  <div class="container">
+    <div class="content-section-heading text-center">
+      <h3 class="text-secondary mb-0">What's the Craic?</h3>
+      <h2 class="mb-5">Best Stops in the City</h2>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Stationary</h2>
+              <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/Jameson.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Ice Cream</h2>
+              <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/Sights.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Strawberries</h2>
+              <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/StephenGreens.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="#">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>Workspace</h2>
+              <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="img/Wicklow.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Map -->
+
 
   <section class="contact bg-primary" id="contact">
+
     <div class="container">
+      <div class="map-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.756138285956!2d-6.269068102629066!3d53.34543882453302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dublin!5e0!3m2!1spt-BR!2sie!4v1588804674573!5m2!1spt-BR!2sie" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <br />
+        <medium>
+          <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.756138285956!2d-6.269068102629066!3d53.34543882453302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dublin!5e0!3m2!1spt-BR!2sie!4v1588804674573!5m2!1spt-BR!2sie"></a>
+        </medium>
+
+        </div>
       <h2>We
         <i class="fas fa-heart"></i>
         new friends!</h2>
       <ul class="list-inline list-social">
         <li class="list-inline-item social-twitter">
           <a href="#">
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li class="list-inline-item social-facebook">
@@ -197,7 +272,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; Your Website 2019. All Rights Reserved.</p>
+      <p>&copy; TourMe 2020. All Rights Reserved.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <a href="#">Privacy</a>
