@@ -1,7 +1,7 @@
 /*!
- * Start Bootstrap - New Age v5.0.7 (https://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ * Start Bootstrap - New Age v5.0.8 (https://startbootstrap.com/themes/new-age)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
  */
 
 html,
@@ -279,6 +279,7 @@ section.features .feature-item i {
   margin-bottom: 15px;
   background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
