@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #fdcc52;
+  color: #7b4397;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #fcbd20;
+  color: #412450;
 }
 
 hr {
