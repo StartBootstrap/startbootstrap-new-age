@@ -199,6 +199,56 @@ header.masthead .device-container .screen img {
   }
 }
 
+header.jumbotron {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  color: white;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+}
+
+header.jumbotron .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.jumbotron .header-content h1 {
+  font-size: 30px;
+}
+
+header.jumbotron .device-container {
+  max-width: 825px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.jumbotron .device-container .screen img {
+  border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+  header.jumbotron {
+    min-height: 150px;
+    padding-top: 50;
+    padding-bottom: 20;
+  }
+  header.jumbotron .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.jumbotron .header-content h1 {
+    font-size: 50px;
+  }
+  header.jumbotron .device-container {
+    max-width: 825px;
+  }
+}
+
 section.download {
   position: relative;
   padding: 150px 0;
