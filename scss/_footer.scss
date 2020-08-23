@@ -18,6 +18,7 @@ footer {
                 &:focus,
                 &:active,
                 &.active {
+                    color: $theme-primary;
                     text-decoration: none;
                 }
             }

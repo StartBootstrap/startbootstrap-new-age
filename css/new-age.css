@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #7b4397;
+  color: #dc2430;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #412450;
+  color: #85151c;
 }
 
 hr {
@@ -442,6 +442,7 @@ footer ul li a {
 }
 
 footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+  color: #fdcc52;
   text-decoration: none;
 }
 

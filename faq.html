@@ -88,41 +88,65 @@
           <div class="row">
             <div class="col-lg-12">
 <!-- This is where we start editing our FAQ -->
-<p>This guide is meant to help you get started and answer some of the most common questions. If you wish to search for a specific term, please type `Command` + `F` and search for a single word such as "favorites".</p>
+<h3>Table of Contents</h3>
+<ol><li><a href=#Installation>How to Install Aerial</a></li>
+  <li><a href="#ChangeSettings">How to Change Aerial's Settings</a></li>
+  <li><a href="#VideosNotPlaying">Videos Not Playing</a></li>
+  <ul><li><a href="#PlayOnlyFavorites">Play Only Favorites</a>
+    <li><a href="#PlayOnlyCategory">Play Only Categories</a>
+    <li><a href="#CachedYN">Video Caching</li></ul>
+<li><a href="#CacheSize">Managing Cache Size</li>
+  <ul><li><a href="#ManualCacheManagement">Manual Cache Management</a></li>
+    <li><a href="#AutomaticCacheManagement">Automatic Cache Management</a></li></ul>
+    <li><a href="#VideoFormat">Selecting a Video Format</a></li>
+    <ul><li><a href="#ChangingFormat">Changing Video Format</a></li></ul>
+    <li><a href="#DownloadRotation">Downloading Your Rotation</a></li>
+    <li><a href="#tvOSVersions">Understanding tvOS Versions in Aerial</a></li>
+    <li><a href="#TimeSettings">Time Settings</a></li>
+    <ul><li><a href="#UseMyLocation">Use Current Location</a></li>
+      <li><a href="UseNightShift">Use Night Shift</a></li>
+      <li><a href="UseManualTime">Manually Specify Sunrise/Sunset Times</a></li>
+      <li><a href="UseLightDarkMode">Use Light/Dark Mode</a></li>
+      <li><a href="DoNotAdapt">Do Not Adapt Videos</a></li></ul>
+    <li><a href="#ResetSettings">Reset Aerial Settings</a></li>
+    <li><a href="#69thQuestion">More Technical Questions</a></li>
+  </ol>
 
-<hr> 
+<hr>
 
-<h3>How do I install Aerial?</h3>
+<h3 id="Installation">How to Install Aerial</h3>
 
 <p>If this is your first time on GitHub or you are new to this, we reccomend the following steps:</p>
 
 <ol>
 <li>Navigate to the <a href="https://github.com/glouel/AerialCompanion/releases/latest">latest release</a></li>
-<li>Select `AerialInstaller.dmg` Disregard the remaining files/assets</li>
-<li>Navigate to your Downloads folder (or wherever you chose to save `AerialInstaller.dmg`)</li>
+<li>Select <code>AerialInstaller.dmg</code> Disregard the remaining files/assets</li>
+<li>Navigate to your Downloads folder (or wherever you chose to save <code>AerialInstaller.dmg</code>)</li>
 <li>Double click on <code>AerialInstaller.dmg</code></li> 
 <li>It will momentarily pause to open the DMG file.</li>
-<li>You will then see a window that prompts you to drag `Aerial.app` to the `Applications` folder. Please do so.</li>
+<li>You will then see a window that prompts you to drag <code>Aerial.app</code> to the <code>Applications</code> folder. Plese drag and drop as shown below: </li>
 <br>
-<img class="img-fluid" src="https://user-images.githubusercontent.com/18543749/90923714-24dc5e00-e3bc-11ea-9a24-a650f42ea734.gif">
+<img class="img-fluid" width="400" src="https://user-images.githubusercontent.com/18543749/90923714-24dc5e00-e3bc-11ea-9a24-a650f42ea734.gif">
 <br>
 <br>
-<li>Now double click on the `Applications` folder that you just dragged the icon to. </li>
-<li>Find and double click on `Aerial.app` </li>
-<li>This will launch and install Aerial. You will notice a small circle in your menubar (at the top of your screen)</li>
-<li>Lastly, go to the menubar, click on the icon and select `Open screen saver settings...`</li>
+<li>Now double click on the <code>Applications</code> folder that you just dragged the icon to. </li>
+<li>Find and double click on <code>Aerial.app</code> </li>
+<li>This will launch and install Aerial. You will notice a small circle in your menubar <img width="33" alt="Screen Shot 2020-08-22 at 7 50 00 PM" src="https://user-images.githubusercontent.com/18543749/90967668-b0371b80-e4b0-11ea-8ce4-c645149a613a.png">
+   (at the top of your screen) </li>
+<li>Lastly, go to the menubar, click on the Aerial icon and select <code>Open screen saver settings...</code></li>
 <br>
 <img width="150" alt="Screen Saver Settings" src="https://user-images.githubusercontent.com/18543749/90923886-77b61580-e3bc-11ea-97c6-ac90647f2e71.png">
 <br><br>
 <li>Click on the "Screen Saver" tab at the top of System Preferences</li>
 <li>And select Aerial on the left hand side.</li> 
-<li>You're all set! If you want to change your settings, simply click on `Screen Saver Options...` on the right hand side. </li>
-<li>You can now eject (delete) `AerialInstaller.dmg`</li>
+<li>You're all set! If you want to change your settings, simply click on <img width="140" alt="Screen Saver Options" src="https://user-images.githubusercontent.com/18543749/90968047-f5aa1780-e4b5-11ea-8ecd-fcb2a19ec4e0.png">
+  on the right hand side. </li>
+<li>You can now eject and delete <code>AerialInstaller.dmg</code></li>
 </ol>
 
 <hr>
 
-<h3>How do I change my settings?</h3>
+<h3 id="ChangeSettings">How to Change Aerial's Settings</h3>
 
 <ol>
   <li>Open System Preferences </li>
@@ -131,28 +155,28 @@
 <img width="128" alt="Desktop and Screen Saver Prefs" src="https://user-images.githubusercontent.com/18543749/90852443-831a2a00-e345-11ea-81ce-48b7632cd537.png">
 <br><br>
 <li>Scroll down until you see "Aerial" in the left hand panel</li>
-<li>Click on `Screen Saver Options` </li>
+<li>Click on <code>Screen Saver Options</code> </li>
 
 <img width="200" alt="Screen Saver Options" src="https://user-images.githubusercontent.com/18543749/90852516-aa70f700-e345-11ea-89f3-0323eb24ebd1.png">
 
-<li>Now you are ready to manage your Aerial settings! </li>
+<li>Now you are ready to manage your Aerial settings! </li></ol>
 
 <hr> 
 
-<h3>Videos not playing</h3>
+<h3 id="VideosNotPlaying">Videos Not Playing</h3>
 
 <p>If you have a selection of videos you want to play, but they aren't playing check the following:</p>
 
 <ul>
   <li>Have you selected the videos you want to play?</li>
   <li>Have you cached the videos you want to play?</li>
-</ul>
+</ul><br>
 
 <h4>Have you selected the videos you want to play?</h4>
 
 <p>You can do this in two different ways. Either <i>favorite</i> the videos and then choose to play only your favorites, or <i>limit the selection</i> of videos that you play. </p>
 
-<h4>To play only favorites:</h4>
+<h4 id="PlayOnlyFavorites">To play only favorites:</h4>
 <ol>
   <li>Open Aerial in System Preferences </li>
   <li>Favorite (by starring) the videos you want to play. You can favorite an entire selection by right clicking on the left hand panel)</li>
@@ -160,99 +184,96 @@
 <br>
 <img width="254" alt=“Favorite from Panel src="https://user-images.githubusercontent.com/18543749/90850889-0422f280-e341-11ea-945a-4b86255a9e4c.png">
 <br><br>
-<li>Click on the `On Rotation` tab in the sidebar (at the top)</li>
-<li>At the top of System Preferences, click on the dropdown next the `Aerial current plays:` and select `Only Favorites`.</li>
+<li>Click on the <code>On Rotation</code> tab in the sidebar (at the top)</li>
+<li>At the top of System Preferences, click on the dropdown next to <code>Aerial currently plays:</code> and select <code>Only Favorites</code>.</li>
 </ol>
 <br>
 <img width="345" alt="Play Only Favorites" src="https://user-images.githubusercontent.com/18543749/90850948-33d1fa80-e341-11ea-8132-78f08a7ae9cc.png">
 <br><br>
-<h4>To play a single category of videos:</h4>
-
+<h4 id="PlayOnlyCategory">To play a single category of videos:</h4>
 <ol>
 <li>Open Aerial in System Preferences </li>
-<li> Click on the `On Rotation` tab in the sidebar (at the top)<li>
-<li> At the top of System Preferences, click on the dropdown next to `Aerial current plays:` and select `Location`, `Time`, `Scene`, or `Source` then select the proper sub-section to play. </li>
-</li>
+<li> Click on the <code>On Rotation</code> tab in the sidebar <i>(at the top)</i></li>
+<li> At the top of System Preferences, click on the dropdown next to <code>Aerial current plays:</code> and select <code>Location</code>, <code>Time</code>, <code>Scene</code>, or <cod<e>Source</code> then select the proper sub-section to play. </li></ol>
 <br>
 <img width="451" alt="Sub Menus" src="https://user-images.githubusercontent.com/18543749/90851180-ebffa300-e341-11ea-85ec-35b1ad7a7395.png">
-<br><br>
-<h3> Have you cached the videos you want to play?</h3>
-
-<ol> Open Aerial in System Preferences </ol>
-<ol> Click on the `On Rotation` tab in the sidebar (at the top)</ol>
-<ol> Click ‘Download rotation’ on the top right (or right click on `On Rotation` in the sidebar and click `Cache missing videos`</ol>
+<br><br> 
+<h3 id="CachedYN">Have I Cached the Correct Videos?</h3><br>
+<ol><li> Open Aerial in System Preferences </li>
+<li> Click on the <code>On Rotation</code> tab in the sidebar (at the top)</li>
+<li> Click <code>Download rotation</code> on the top right (or right click on <code>On Rotation</code>  in the sidebar and click <code>Cache missing videos</code></li></ol>
 
 <img width="220" alt="Download rotation" src="https://user-images.githubusercontent.com/18543749/90851831-db502c80-e343-11ea-865d-5b8a8cbecac6.png">  <img width="220" alt="Cache Missing Videos" src="https://user-images.githubusercontent.com/18543749/90851994-4ef23980-e344-11ea-9b52-fd0fa783a10b.png">
 
 <hr>
-
-<h3>My Cache is too large/small</h3>
-
-<p>Aerial can cache videos in two different ways:</p>
-<ul>
+<br>
+<h3 id="CacheSize">Managing Cache Size</h3>
+<p>Aerial can cache videos in two different ways:</p><ul>
   <li>Manually </li>
-  <li>Automatically</li>
-</ul>
+  <li>Automatically</li></ul>
+<br>
+<p>When caching is set to <code>manual</code> you will need to download and manage your cache entirely manually. When set to <code>automatic</code>, you can set the size of your cache and Aerial will fill it with the videos you love! </p>
 
-<p>When caching is set to **manual** you will need to download and manage your cache entirely manually. When set to <b>automatic</b>, you can set the size of your cache and Aerial will fill it with the videos you love! </p>
-
-<h4> Manual Cache Management</h4>
+<h4 id="ManualCacheManagement"> Manual Cache Management</h4>
 
 <ol>
 <li> Open Aerial in System Preferences</li> 
 <li> Click on the settings tab (gear at the top of the sidebar)</li>
-<li> Click on `Cache` on the sidebar</li>
-<li> Uncheck 'Automatically download videos` </li>
+<li> Click on <code>Cache</code> on the sidebar</li>
+<li> Uncheck  <code>Automatically download videos</code> </li>
 <br>
 <img width="400" alt="Manual management" src="https://user-images.githubusercontent.com/18543749/90852090-9678c580-e344-11ea-8f9f-7e6e3868778c.png">
 <br><br>
 <li> Now download any videos you want to cache manually. </li>
-<li> Note that this may take up a significant amount of disk space. To delete or prune your cache, click the `Show in Finder` button and delete any videos you no longer want. </li>
+<li> Note that this may take up a significant amount of disk space. To delete or prune your cache, click the <code>Show in Finder</code> button and delete any videos you no longer want. </li>
 </ol>
-
-<h4>Automatic Cache Management</h4>
-
+<br><br>
+<h4 id="AutomaticCacheManagement">Automatic Cache Management</h4>
+<br>
 <ol>
 <li> Open Aerial in System Preferences</li> 
 <li> Click on the settings tab (gear at the top of the sidebar)</li>
-<li> Click on `Cache` on the sidebar</li>
-<li> Check 'Automatically download videos` </li>
+<li> Click on <code>Cache</code> on the sidebar</li>
+<li> Check <code>Automatically download videos</code> </li>
 <br>
 <img width="400" alt="Automatic management" src="https://user-images.githubusercontent.com/18543749/90852209-e35c9c00-e344-11ea-9505-481789a581d7.png">
 <br><br>
-<li> Set your **cache limit size** - This is the *MAXIMUM* size you want your cache. If you don't want to set a maximum, move the slider all the way to the right.</li>
+<li> Set your <b>cache limit size</b> - This is the <b>MAXIMUM</b> size you want your cache. If you don't want to set a maximum, move the slider all the way to the right.</li>
 <li> Select how often you want to rotate your videos in your cache </li>
 </ol>
 <br>
 <img width="200" alt="Rotate videos" src="https://user-images.githubusercontent.com/18543749/90852283-14d56780-e345-11ea-9ec5-7817cefc1d04.png">
 
-<p><b>NOTE:</b> If you have fewer videos selected than your cache size limit, videos will not rotate. If your cache is larger than your limit, then over the course of the selected time period your cache will be automatically pruned until you are under your cache limit and then videos will periodically rotate). 
+<blockquote>
+  <b>NOTE:</b> If you have fewer videos selected than your cache size limit, videos will not rotate. If your cache is larger than your limit, then over the course of the selected time period your cache will be automatically pruned until you are under your cache limit and then videos will periodically rotate).
+ </blockquote>
 
 <hr>
 
-<h3> What video format should I select?</h3>
+<h3 id="VideoFormat"> Selecting a Video Format </h3>
 
 This can be a complicated question, however we have written about it extensively <a href="https://github.com/JohnCoates/Aerial/blob/master/Documentation/HardwareDecoding.md">here.</a> 
 
 The short answer is:
 <ul>
-<li>If you have an older Mac (2011-2014) you should use 1080 H.264. </li>
-<li>If your Mac is 2015-2017 consider use of 1080 HEVC. </li>
-<li>If you have a newer Mac (Late 2017-present) you can consider using 1080 HEVC, HDR, or, if you have more than 8GB of RAM you can give 4K a shot! </li>
+<li>If you have an older Mac (2011-2014) you should use <b>1080p H.264</b>. </li>
+<li>If your Mac is 2015-2017 consider use of <b>1080p HEVC</b>. </li>
+<li>If you have a newer Mac (Late 2017-present) you can consider using <b>1080p HEVC</b>, <b>HDR</b>, or, <i>if you have more than 8GB of RAM</i> you can give <b>4K</b> a shot! </li>
 </ul>
 
-<p><b>NOTE:</b> 4K HDR requires the most intensive processing and requires a HDR compatible monitor.</p>
+<blockquote><b>NOTE:</b> 4K HDR requires the most intensive processing and requires a HDR compatible monitor and a reccomended minimum of 8GB of RAM.</blockquote>
 
-<h4> To change the format of your videos:</h4>
+<h4 id="ChangingFormat"> To change the format of your videos:</h4>
 
-<i>Skip to step 4 if you have not downloaded any videos yet</i>
+<i>Skip to <b>step 4</b> if you have not downloaded any videos yet</i>
 
 <ol>
-  <li>If you have previously downloaded/cached videos please open Aerial Settings and click on "Advanced" in the sidebar. Click on "Show Log in Finder" </li>
+  <li>If you have previously downloaded/cached videos please open Aerial Settings and click on "Advanced" in the sidebar. Click on <img width="140" alt="Show Log in Finder" src="https://user-images.githubusercontent.com/18543749/90968079-4ae62900-e4b6-11ea-971a-8ca9eb8fe3bb.png">
+  </li>
 <br>
-<img width="500" alt="Cache Access" src="https://user-images.githubusercontent.com/18543749/90925120-bcdb4700-e3be-11ea-92a4-93c79756aab2.png">
+<img width="400" alt="Cache Access" src="https://user-images.githubusercontent.com/18543749/90925120-bcdb4700-e3be-11ea-92a4-93c79756aab2.png">
 <br><br>
-<li> Inside this folder, click on the `Cache` folder </li>
+<li> Inside this folder, click on the <code>Cache</code> folder </li>
 <li> Keep the folder, but delete all content inside. Then empty your trash. </li>
 <li> Go to Aerial > Settings > Advanced</li>
 <li> Select your preferred video format</li>
@@ -266,9 +287,9 @@ The short answer is:
 
 <hr>
 
-<h3>What is "Download Rotation" and should I click it?</h3>
+<h3 id="DownloadRotation">Downloading Your Rotation</h3>
 
-<p>The `Download Rotation` button is visible under the `On Rotation` tab on the left. </p>
+<p>The <code>Download Rotation</code> button is visible under the <code>On Rotation</code> tab on the left. </p>
 <br>
 <img width="400" alt="Download Rotation" src="https://user-images.githubusercontent.com/18543749/90960980-962b1800-e473-11ea-8224-d9fe1907c14e.png">
 <br><br>
@@ -276,32 +297,77 @@ The short answer is:
 
 <p><i>Previous versions of Aerial could "stream" videos without downloading a cache, but this was replaced in 2.0 with the automatic cache management tool. </i></p>
 
-<p>The download rotation button is synonomous with saying "Cache my rotation". In other words, any videos in the `On Rotation` category on the left hand panel will begin to download to your computer when you click `Download Rotation`. </p>
+<p>The download rotation button is synonomous with saying "Cache my rotation". In other words, any videos in the <code>On Rotation</code> category on the left hand panel will begin to download to your computer when you click <code>Download Rotation</code>. </p>
 
-<p> <b>NOTE:</b> Only videos that are cached AND that are shown in the `On Rotation` tab will play when you start your screen saver. </p>
+<blockquote><p> <b>NOTE:</b> Only videos that are cached AND that are shown in the <code>On Rotation></code> tab will play when you start your screen saver. </p></blockquote>
 
 <p>In the event that you want to download videos from a specific category (for example if you want to select only certain videos to play) you can additionally right click on any category and select "Cache missing videos" </p>
 
-<p> <b>NOTE:</b> If this option is not available, it is because you have already downloaded these videos!</p>
-
+<blockquote><b>NOTE:</b> If this option is not available, it is because you have already downloaded these videos!</blockquote>
 <br>
 <img width="200" alt="Cache Missing Videos" src="https://user-images.githubusercontent.com/18543749/90961135-c32bfa80-e474-11ea-8cf1-dd2abcc2d817.png">
 <br><br>
 <hr>
 
-<h3> Where is tvOS 11 and 12?</h3>
+<h3 id="tvOSVersions">tvOS Versions</h3>
 
 <p>All the videos are still available in Aerial, don't worry!</p>
-
 <p>Aerial 2.0 takes advantage of the latest available videos from tvOS. tvOS 11 and 12 are not shown as tvOS 13 actually contains these videos! </p>
-
 <p>tvOS 10 videos support <b>1080p</b> quality while tvOS 13 can support <b>4K</b> and <b>4K HDR</b> videos. You can still play videos from tvOS 13 in <b>1080p</b> as well. </p>
 <br>
 <img width="150" alt="tvOS" src="https://user-images.githubusercontent.com/18543749/90963789-e2348780-e488-11ea-859f-8a01dfa8d3fb.png">
 <br><br>
 <hr>
+<h3 id="Time Settings">Time Settings</h3>
 
-<h3> I have more technical questions...</h3>
+<p>Aerial has the ability to adapt the videos that are played to the time of day in the categories of:</p>
+<ul>
+  <li>Morning/Sunrise</li>
+  <li>Daytime</li>
+  <li>Evening/Sunset</li>
+  <li>Nighttime</li>
+</ul>
+<p>The option to adapt your own videos is entirely optional but can be based on a variety of different settings on your Mac as seen below:</p>
+
+<img width="600" alt="Screen Shot 2020-08-22 at 8 52 02 PM" src="https://user-images.githubusercontent.com/18543749/90968354-56871f00-e4b9-11ea-84bc-b1e60829f7ff.png">
+
+<h4 id="#UseMyLocation">Use My Location</h4>
+
+<p><code>Use my location</code> is the reccomended setting here. Aerial <b>does not collect your location data</b> but instead uses macOS Location Services to determine an approximate latitude and longitude in order to set Sunrise and Sunset times to be exact to the second.</p>
+
+<h4 id="UseNightShift">Use macOS Night Shift</h4>
+<p>Another option is to use your existing <a href="https://support.apple.com/en-us/HT207513">Night Shift</a> settings to adapt videos. If you have customized your Night Shift settings this may be a good option to adapt your videos as night shift is enabled or disabled.</p>
+
+<h4 id="UseManualTime">Manually Specify Sunrise and Sunset Times</h4>
+<p>If you want to take advantage of adapted videos but without Night Shift, Light/Dark Mode, or Location Services, you can isntead set a specific time for Sunrise and Sunset and the videos will adapt based on that pre-set time</p>
+
+<h4 id="UseLightDarkMode">Adapt Videos Based on Light/Dark Mode</h4>
+<p style="color:red"><b>NOTE:</b> macOS 10.14 or newer is required for this setting.</p>
+<p>If you already have Light/Dark Mode enabled to switch automatically, this will allow the videos to be shown based on your <a href="https://support.apple.com/en-us/HT208976">Light or Dark Mode</a> settings. 
+
+<h4 id="DoNotAdapt">Do Not Adapt Videos</h4>
+<p>If you do not wish to adapt videos based on your settings or location, this option will disable this feature. </p>
+<p>You can also choose to alternatively manually set Light or Dark Mode and only show the nighttime videos in Dark Mode so as not to be too bright!</p>
+<img width="140" alt="Screen Shot 2020-08-22 at 9 05 13 PM" src="https://user-images.githubusercontent.com/18543749/90968528-2d678e00-e4bb-11ea-884c-c4e07de6fbd9.png">
+
+<hr>
+<h3 id="#ResetSettings">Reset Aerial's Settings</h3>
+
+<p>To fully reset Aerial's settings back to default:</p>
+<ol><li>Open Aerial Settings in System Preferences</li>
+  <li>Click on the <img width="30" alt="Gear" src="https://user-images.githubusercontent.com/18543749/90968117-a6b0b200-e4b6-11ea-98b7-ed7a131c2a00.png"> Settings Tab</li>
+  <li>Click on <code>Advanced</code> in the sidebar</li>
+<br><b><p style="color:red">WARNING: The next stop cannot be undone</b></p>
+  <li>Click <img width="140" alt="Reset All Settings" src="https://user-images.githubusercontent.com/18543749/90968132-e8415d00-e4b6-11ea-8e5b-11a09d83a6c9.png">
+  <li>Once clicked, you will see the following popup and your settings will be reset</li>
+  <img width="300" alt="Reset Confirmed" src="https://user-images.githubusercontent.com/18543749/90968135-fbecc380-e4b6-11ea-89aa-e80aa9eb3aa4.png">
+  <li>You must quit and restart System Preferences for this to take effect</li>
+  <li>On your next launch you will be prompted to set up your settings for Aerial</li>
+</ol><br>
+
+<hr>
+<br>
+<h3 id="69thQuestion">More Technical Questions</h3>
 
 <p>This FAQ was made largely to help those who are new to Aerial and GitHub. If you have more technical questions you need answered, please visit our Additional Documentation avaialble <a href="https://github.com/JohnCoates/Aerial/tree/master/Documentation#welcome-to-aerials-documentation">here</a></p>
 
