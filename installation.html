@@ -62,7 +62,7 @@
       <div class="row h-100">
         <div class="col-lg-5 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">Installation methods</h1>
+            <h1 class="mb-5">Installation and uninstallation</h1>
           </div>
         </div>
         <div class="col-lg-7 my-auto">
@@ -73,7 +73,6 @@
 
   <section class="features" id="support">
     <div class="container">
-      <h2>There are three supported installation methods</h2>
       <div class="col-lg-12 my-auto">
         <div class="container-fluid">
           <div class="row">
@@ -94,7 +93,7 @@
               <p>Installing this way is super easy, the Companion is now available in a more familiar dmg format and it's really just a drag and drop :</p>
               <div class="text-center">
                 <img class="img-fluid" src="https://user-images.githubusercontent.com/18543749/90923714-24dc5e00-e3bc-11ea-9a24-a650f42ea734.gif">
-                <p class="small">It's really simple!</p>
+                <p>If you need more help, <a href=faq.html>check our FAQ here!</a></p>
               </div>
               <p>&nbsp;</p>
               <div class="accordion" id="accordionExample">
@@ -138,13 +137,15 @@
                       <ul>
                         <li>Aerial Companion uses the version number from the manifest to infer the download link from Aerial's repository (the download links are always of the same format, so version 1.9.2 will be available at https://github.com/JohnCoates/Aerial/releases/download/v1.9.2/Aerial.saver.zip)</li>
                         <li>The zip file is downloaded to <code>~/Library/Application Support/AerialUpdater/</code></li>
-The sha256 of the file is computed, and compared to the one from the manifest
-The zip is unzipped in place, looking for Aerial.saver
-Aerial.saver is verified (using macOS codesigning) to be using the correct Bundle ID (com.JohnCoates.Aerial)
-Aerial.saver is verified (using macOS codesigning) to be signed/notarized with my Developer Apple ID.
-If and only if everything checks out, then Aerial.saver gets copied to ~/Library/Screen Savers/.
+                        <li>The <code>sha256</code> of the file is computed, and compared to the one from the manifest</li>
 
+                        <li>The zip is unzipped in place, looking for <code>Aerial.saver</code></li>
+                        <li><code>Aerial.saver</code> is verified (using macOS codesigning) to be using the correct Bundle ID (<code>com.JohnCoates.Aerial</code>>)</li>
+                        <li><code>Aerial.saver</code> is verified (using macOS codesigning) to be signed/notarized with my Developer Apple ID.</li>
+                        <li>If and only if everything checks out, then Aerial.saver gets copied to <code>~/Library/Screen Savers/</code> (a directory that is created if you don't have it).</li>
+                      </ul>
 
+                      <p>While nothing is perfect, these checks add many layers of security to the classical methods of just downloading a zip from GitHub. If you think this method can be improved further more, please let me know, the code of the Companion and the update system is reviewable and is open source <a href="https://github.com/glouel/AerialCompanion"> right here on GitHub</a>. </p>
                     </div>
                   </div>
                 </div>
@@ -160,25 +161,23 @@ If and only if everything checks out, then Aerial.saver gets copied to ~/Library
             <div class="col-lg-9">
               <br><br>
               <h2>Using Homebrew</h2>
-              <p>f you're looking to install Aerial across many systems, remotely, or simply from Terminal we recommend Brew Cask.</p>
-
-<p>Simply issue the following Terminal command:
-
-brew cask install aerial
-To upgrade Aerial, run the following Terminal command:
-
-brew cask upgrade aerial
-Please note that if you prefer using homebrew to update Aerial, we recommend you disable Sparkle auto updates in the Updatestab.
-
-Warning If you see that your settings aren't saved in Catalina, please check if this folder exists : You may need to create this folder manually : ~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/
-
-You may need to manually create the ByHost folder manually as Catalina may not do so for you.
             </div>
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <p>bla</p>
-            </div>
+              <p>If you're looking to install Aerial across many systems, remotely, or simply from Terminal we recommend Brew Cask.</p>
+
+              <p>Simply issue the following Terminal command:</p>
+
+              <code>brew cask install aerial</code>
+              <br><br>
+              <p>To upgrade Aerial, run the following Terminal command:</p>
+
+              <code>brew cask upgrade aerial</code>
+              <br><br>
+              <p>Please note that Homebrew updates may appear delayed, as they need to be approved. Further more, during the Big Sur beta, submitting the updates to Homebrew is extra challenging as it's not supported, and may take some extra time.</p>
+
+              <p><b>Warning:</b> If you see that your settings aren't saved in Catalina, please check if this folder exists : You may need to create this folder manually : <code>~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/</code></p>            </div>
           </div>
           <div class="row">
             <div class="col-lg-3">
@@ -193,7 +192,64 @@ You may need to manually create the ByHost folder manually as Catalina may not d
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <p>bla</p>
+              <p>You can still do that:</p>
+              <ol>
+                <li>Quit System Preferences.</li>
+                <li>Download the <a href=https://github.com/JohnCoates/Aerial/releases/latest>latest release</a> of Aerial.saver.zip. Alternatively, you can try the latest beta version following <a href=https://github.com/JohnCoates/Aerial/releases>this link</a>.</li>
+                <li>Unzip the downloaded file (if you use Safari, it should already be done for you).</li>
+                <li>Double-click Aerial.saver; it will open in System Preferences > Desktop & Screen Saver and ask you if you want to install for all users or for your user only. I highly recommend you pick for your user only. Be aware that installing for all users will require a password at install and each subsequent update, including auto-updates and is not recommended for many reasons on 10.15 and after!</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="feature-item">
+                <i class="icon-logout"></i>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <br><br>
+              <h2>Uninstallation and cleanup</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <h3>Removing the cache</h3>
+              <p>Aerial stores your videos in a local cache on your machine. It's location depends on the version of macOS you used, how you installed Aerial (for one user or multiple user) and when you first installed Aerial. You can find the location of the cache prior to uninstalling by going into Aerial's Cache settings.</p>
+
+              <p>Prior to macOS Catalina (10.15), the cache for multiple user was either :</p>
+
+              <ul>
+                <li><code>/Library/Caches/Aerial (long time users)</code></li>
+                <li><code>/Library/Application Support/Aerial</code> (if you installed for the first time after summer 2019)</li>
+              </ul>
+              <p>Prior to macOS Catalina (10.15), the cache for a single user was either :</p>
+
+              <ul>
+                <li><code>~/Library/Caches/Aerial</code> (long time users)</li>
+                <li><code>~/Library/Application Support/Aerial</code> (if you installed for the first time after summer 2019)</li>
+              </ul>
+              <p>Starting with macOS Catalina (10.15), each user has a cache in it's own sandbox at this location :</p>
+              <ul>
+                <li><code>~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Application Support/Aerial</code></li>
+              </ul>
+
+              <h3>Removing the preferences</h3>
+              <p>The preference file is located either at :</p>
+              <ul>
+                <li><code>~/Library/Preferences/ByHost/com.JohnCoates.Aerial.{UUID}.plist</code> (before Catalina)</li>
+                <li><code>~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/com.JohnCoates.Aerial.{UUID}.plist</code> (starting with Catalina)</li>
+              </ul>
+
+<h3>Uninstallation</h3>
+<p>If you installed using the Companion, or manually, the uninstallation process is straightforward, simply right-click on the Aerial screen saver in System Preferences, and select Delete "Aerial". This will uninstall the screen saver automatically.</p>
+<p>If you prefer, you can delete the files manually. macOS can store screen savers in two locations depending on your choices, <code>/Library/Screen Savers</code> (if you installed for All Users) and <code>/Users/YOURUSERNAME/Library/Screen Savers</code> (installed for your user only). Check both locations for a file called Aerial.saver and delete any copies you find.</p>
+
+<p>If you installed Aerial using Brew Cask, then enter the following command in a Terminal window to uninstall:</p>
+<code>brew cask uninstall aerial</code>
+<br><br>
+
             </div>
           </div>
 
