@@ -112,46 +112,59 @@
 
             <ul>
             <li>The sandboxing restrictions make it impossible, as far as I understand, for a screensaver file to auto-update itself, as Aerial did in the past through Sparkle. To overcome this, we made a separate Aerial Companion app to bring you auto updates. If you follow the download link on this site, this is what you'll get. You can find more information on our <a href="installation.html">install page</a>.</li> 
+            <br>
             <li>Custom videos location : In Catalina, while it's possible to add videos that are stored in your user's Documents or Downloads folder, these files will not playback when Aerial is running as a screensaver. This is a sandboxing restriction, we recommend that you place your videos in a "less protected" folder such as <code>/Users/Shared/</code>.</li>
+            <br>
             <li>Settings aren't saved : Some users (using MDM management software and/or Homebrew) seem to have run into an issue where macOS Catalina didn't create the folder where Aerial saves its preferences. You may need to create this folder manually : <code>~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/</code></li>
+            <br>
             <li>Some current (or wanted/upcoming) features that require specific privileges are no longer working/impossible because of restrictions, this includes `Right arrow key to skip`. Sorry about that one, I hope I'll be able to bring it back at some point.</li>
             </ul>
             <h2>Issues on macOS 10.14 and earlier</h2>
 
             <ul>
               <li>If you enable Weather, or Adapting videos showed based on time, you may encounter, when exiting the screen saver, this nagging panel that doesn't disappear despite clicking Allow :</li>
-            <br>
-            <img class="img-fluid" src="https://user-images.githubusercontent.com/37544189/90182726-b6dbd980-ddb2-11ea-9a09-c5ed3efb1b48.png">
-            <br><br>
-            <p>If that is the case, you can fix it following these instructions : </p>
+              <br>
+              <img class="img-fluid" src="https://user-images.githubusercontent.com/37544189/90182726-b6dbd980-ddb2-11ea-9a09-c5ed3efb1b48.png">
+              <br><br>
+              <p>If that is the case, you can fix it following these instructions : </p>
 
-            <ul><li>Open System Preferences and go into Security & Privacy: </li>
-            <br>
-            <img class="img-fluid" src="https://user-images.githubusercontent.com/37544189/90182715-b4797f80-ddb2-11ea-9174-a02471505876.jpg">
-            <br><br>
+              <ul><li>Open System Preferences and go into Security & Privacy: </li>
+              <br>
+              <img class="img-fluid" src="https://user-images.githubusercontent.com/37544189/90182715-b4797f80-ddb2-11ea-9174-a02471505876.jpg">
+              <br><br>
 
-            <li>Then click on the `Privacy` tab and in order, click the green, orange and red circles :</li>
-            <br>
-            <img class="img-fluid" src="https://user-images.githubusercontent.com/37544189/90182721-b5aaac80-ddb2-11ea-9edc-b0a400159dd1.jpg">
-            <br><br>
-            <p>This will allow Aerial to use your location to calculate sunset and sunrise times, and if you enabled it, provide your current weather conditions.</p>
-            </ul>
+              <li>Then click on the `Privacy` tab and in order, click the green, orange and red circles :</li>
+              <br>
+              <img class="img-fluid" src="https://user-images.githubusercontent.com/37544189/90182721-b5aaac80-ddb2-11ea-9edc-b0a400159dd1.jpg">
+              <br><br>
+              <p>This will allow Aerial to use your location to calculate sunset and sunrise times, and if you enabled it, provide your current weather conditions.</p>
+              </ul>
             </ul>
 
             <h2>Very common issues/macOS bugs</h2>
 
             <ul>
               <li>"You cannot use the Aerial screen saver with this version of macOS." error, or you don't see a preview and the prefererences button is greyed out: Select Aerial, close `System Preferences` with Aerial still selected, re-open System Preferences and Aerial should now work. This is a known bug with Swift screen savers in macOS/OS X reported (a long time ago...) to Apple as <a href="http://www.openradar.me/25569037">rdar://25569037</a>.</li>
-              <li>Some videos may not download, or you are seeing an error with "A server with the specified hostname could not be found.". This may be an issue with Content Caching in macOS, please check that link for more details and how to fix it : https://apple.stackexchange.com/questions/354197/macos-mojave-software-update-error-a-server-with-the-specified-hostname-could/371591#371591</li>
-              <li>Screensaver hangs at start once a day or so, or unable to quit screensaver. Users of third party firewalls like Little Snitch have reported that it may interact by either blocking by default or popping a window while Aerial tries to connect (for update or download purposes). Please either disable "Auto update while the screen saver is running" in Advanced tab, or allow the connexion in your firewall to `raw.githubusercontent.com` in order to fix the issue. Aerial uses the [Sparkle](https://sparkle-project.org) open source project to provide automatic updates. This works by accessing a file hosted in this repository that you can see here : `https://github.com/JohnCoates/Aerial/blob/master/appcast.xml` (Aerial accesses this url to be exact which is the "raw" version of the file : `https://raw.githubusercontent.com/JohnCoates/Aerial/master/appcast.xml`)</li>
-            <li>"This app is damaged and can't be opened, you should move it to the trash" when double-clicking the `Aerial.saver` file: Please see the [installation notes](Installation.md), this is a GateKeeper issue.</li>
-            <li>Chrome complains that "This download is uncommon and potentilally malicious" on very fresh releases. Google seems to flag very recent files as "uncommon" and may block the download (more info on [Google's site here](https://support.google.com/chrome/answer/6261569). After a few hours/days, this warning will disappear. More info in this [issue](https://github.com/JohnCoates/Aerial/issues/759#issuecomment-489616050). This problem only applies to zip downloads and not to the new Companion app. </li>
-            <li>Can't use Aerial as a login screen saver: As far as we know, using 3rd party screen savers before login is no longer possible on modern versions of macOS (probably and rightly so for security reasons). More about this [here](https://github.com/JohnCoates/Aerial/issues/571).</li>
-            <li>Videos are stuttering: There are thread general causes of stuttering</li>
-            <ul><li>Streaming: We heavily recommend you cache your videos instead of streaming. Streaming performance may cause stuttering or hanging as this is not something that's officially supported by the servers. Starting with version 2.0.0, streaming has been removed from Aerial to avoid those issues.</li>
-              <li>HDR playback: Playback of HDR videos may cause random stuttering on some Macs, this issue has been reported on Macs with AMD graphics, and 2015 and earlier Macs with Intel graphics.</li>
-              <li>Background tasks: MacOS may start some background tasks while the screensaver is running (usually after a set amount of time, like 5 minutes). `mediaanalysisd` is known to cause issues on some machines with integrated graphics. You can find more information on how to disable it here : https://github.com/JohnCoates/Aerial/issues/882#issuecomment-552104067</li>
-            </ul>
+              <br>
+              <li>Some videos may not download, or you are seeing an error with "A server with the specified hostname could not be found.". This may be an issue with Content Caching in macOS, please check <a href="https://apple.stackexchange.com/questions/354197/macos-mojave-software-update-error-a-server-with-the-specified-hostname-could/371591#371591">this link for more details</a> and how to fix it.</li>
+              <br>
+              <li>Screensaver hangs at start once a day or so, or unable to quit screensaver. Users of third party firewalls like Little Snitch have reported that it may interact by either blocking by default or popping a window while Aerial tries to connect (for update or download purposes). Please read the section on top about Little Snitch.</li>
+              <br>
+              <li>"This app is damaged and can't be opened, you should move it to the trash" when double-clicking the `Aerial.saver` file: Please see the [installation notes](Installation.md), this is a GateKeeper issue.</li>
+              <br>
+              <li>Chrome complains that "This download is uncommon and potentilally malicious" on very fresh releases. Google seems to flag very recent files as "uncommon" and may block the download (more info on <a href="https://support.google.com/chrome/answer/6261569">Google's site here</a>. After a few hours/days, this warning will disappear. This problem only applies to zip downloads and not to the new Companion app. </li>
+              <br>
+              <li>Can't use Aerial as a login screen saver: As far as we know, using 3rd party screen savers before login is no longer possible on modern versions of macOS (probably and rightly so for security reasons). More about this <a href="https://github.com/JohnCoates/Aerial/issues/571">here</a>.</li>
+              <br>
+              <li>Videos are stuttering: There are thread general causes of stuttering:</li>
+              <ul>
+                <br>
+                <li>Streaming: We heavily recommend you cache your videos instead of streaming. Streaming performance may cause stuttering or hanging as this is not something that's officially supported by the servers. Starting with version 2.0.0, streaming has been removed from Aerial to avoid those issues.</li>
+                <br>
+                <li>HDR playback: Playback of HDR videos may cause random stuttering on some Macs, this issue has been reported on Macs with AMD graphics, and 2015 and earlier Macs with Intel graphics. 4K playback may also cause stuttering on some machines, like MacBook Air.</li>
+                <br>
+                <li>Background tasks: MacOS may start some background tasks while the screensaver is running (usually after a set amount of time, like 5 minutes). `mediaanalysisd` is known to cause issues on some machines with integrated graphics. You can find more information <a href=https://github.com/JohnCoates/Aerial/issues/882#issuecomment-552104067>on how to disable it here</a>.</li>
+              </ul>
             </ul>
 
             <h2>About custom videos</h2>
@@ -161,25 +174,32 @@
             <h2>About video caching</h2>
 
             <ul>
-              <li>Change cache location : Starting with Catalina, and because of the sandboxing limitations introduced with macOS 10.15, Aerial will use two distinct folders. Because of the sandbox, Aerial can **only** write inside the sandbox. You can however still specify a secondary cache location, this is what the cache location is about. This is a read-only folder where you can move your videos if you wish. You need to do this manually, changing the cache location **will not** move your videos as Aerial cannot write outside the sandbox. Please note that locations outside the main disk (including networked and external drives) are not allowed. This, again, is a macOS 10.15 limitation that we can't workaround. </li>
+              <li>Change cache location : Starting with Catalina, and because of the sandboxing limitations introduced with macOS 10.15, Aerial will use two distinct folders. Because of the sandbox, Aerial can **only** write inside the sandbox. You can however still specify a secondary cache location, this is what the cache location is about. This is a read-only folder where you can move your videos if you wish. You need to do this manually, changing the cache location <b>will not</b> move your videos as Aerial cannot write outside the sandbox. Please note that locations outside the main disk (including networked and external drives) are not allowed. This, again, is a macOS 10.15 limitation that we can't workaround. </li>
+              <br>
               <li>Videos keeps disappearing, Aerial may not restart once in a while: Aerial stores all it's data in a Cache folder. This cache may get deleted by some third party software trying to free disk space. If you use such a "Cleaning" tool, we recommend you set a manual folder location in the Cache tab of Aerial. For example, you can create an Aerial folder in your User folder, and point to it. This will ensure Aerial files don't get deleted.</li>
-              <li>Black screen: If you are behind a firewall (Like Little Snitch or Hands Off!) try creating exceptions for Aerial to allow it access to Apple's servers. Be sure the applications `ScreenSaverEngine.app` and `System Preferences.app` are not being blocked access to `*.phobos.apple.com`, `*.phobos.apple.com.edgesuite.net` and `sylvan.apple.com`. If that isn't an option, please look at the [Offline mode](OfflineMode.md) documentation.</li>
+              <br>
+              <li>Black screen: If you are behind a firewall (Like Little Snitch or Hands Off!) try creating exceptions for Aerial to allow it access to Apple's servers. Be sure the applications <code>ScreenSaverEngine.app</code> and <code>System Preferences.app</code> are not being blocked access to <code>*.phobos.apple.com</code>, <code>*.phobos.apple.com.edgesuite.net</code> and <code>sylvan.apple.com</code>. If that isn't an option, please look at the <a href="https://github.com/JohnCoates/Aerial/blob/master/Documentation/OfflineMode.md">Offline mode</a> documentation.</li>
             </ul>
 
             <h2>Bugs related to old versions</h2>
+
             <ul>
               <li>*Tip : you can see the version number in the bottom right corner of the preference panel. If you don't see a version number, your version is SEVERELY outdated (1.2 or below)!*</li>
-
+              <br>
               <li>"Done" button doesn't close Aerial: Please update to latest available version, this is a bug on Mojave with very old versions of Aerial (1.2 and below).</li>
+              <br>
               <li>Not seeing extended descriptions: Make sure you have version 1.4.2 or above.</li>
+              <br>
               <li>Can't type into text fields with macOS High Sierra/Video corruption issue on High Sierra: Please make sure you have at least version 1.4.5.</li>
+              <br>
               <li>Aerial logs you out of your user account everytime it starts: This looks like a new bug with macOS 10.14.5 beta 18F108f (similar to the Video corruption issue on High Sierra above), possibly only for Macs with Intel graphics. Please update to Aerial 1.5.0. More information here : https://github.com/JohnCoates/Aerial/issues/738</li>
             </ul>
 
             <h2>Misc.</h2>
             <ul>
               <li>Brightness control does not control external displays: Aerial uses the brightness API from macOS to change the brightness of your screens. As of version 1.5.0, this does not allow us to control the brightness of external screens.</li>
-              <li>High CPU usage/fan spinning all of a sudden: If you correctly configured the preferred video format [according to your Mac](HardwareDecoding.md) and still experience high CPU usage/fan spinning all of a sudden, please look for the cause with `Activity Monitor`, you may see a `com.apple.photos.ImageConversionService` responsible for this CPU load. This is the iCloud Photos process, you can find more about [what it does here](https://support.apple.com/en-gu/HT204264) and how to pause it.</li>
+              <br>
+              <li>High CPU usage/fan spinning all of a sudden: If you correctly configured the preferred video format [according to your Mac](HardwareDecoding.md) and still experience high CPU usage/fan spinning all of a sudden, please look for the cause with <code>Activity Monitor</code>, you may see a <code>com.apple.photos.ImageConversionService</code> responsible for this CPU load. This is the iCloud Photos process, you can find more about <a href="https://support.apple.com/en-gu/HT204264">what it does here</a> and how to pause it.</li>
             </ul>
 
 <!-- End of troubleshooting content -->
