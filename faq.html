@@ -252,20 +252,63 @@
 
 <hr>
 
-<h2 id="VideoFormat"> Selecting a Video Format </h2>
+<h2 id="VideoFormat">Selecting a Video Format</h2>
 
-This can be a complicated question, however we have written about it extensively <a href="https://github.com/JohnCoates/Aerial/blob/master/Documentation/HardwareDecoding.md">here.</a> 
-
-The short answer is:
+<p>The short answer is:</p>
 <ul>
+  <li>Aerial will select what it believes is the best choice for your machine by default</li>
 <li>If you have an older Mac (2011-2014) you should use <b>1080p H.264</b>. </li>
 <li>If your Mac is 2015-2017 consider use of <b>1080p HEVC</b>. </li>
 <li>If you have a newer Mac (Late 2017-present) you can consider using <b>1080p HEVC</b>, <b>HDR</b>, or, <i>if you have more than 8GB of RAM</i> you can give <b>4K</b> a shot! </li>
+<ul><li>If you have the <a href="https://www.apple.com/pro-display-xdr/">Pro Display XDR</a>, <b>4K HDR</b> is reccomended. </li>
+  <li>If you find that videos are "stuttering" or "lagging" <b>decrease your video quality</b>.</li></ul>
 </ul>
-
 <blockquote><b>NOTE:</b> 4K HDR requires the most intensive processing and requires a HDR compatible monitor and a reccomended minimum of 8GB of RAM.</blockquote>
 
-<h3 id="ChangingFormat"> To change the format of your videos:</h3>
+<p>If you'd still like to learn more, we have written about it more extensively in the dropdown below.</p>
+
+              <!-- The accordion is the container --> 
+              <div class="accordion" id="accordionExample">
+                <!-- Each thing is a card, this is the first --> 
+                <div class="card">
+                  <!-- title thing --> 
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Learn More!
+                      </button>
+                    </h2>
+                  </div>
+                  <!-- end title thing --> 
+
+                  <!-- content thing --> 
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <h4>About HEVC, hardware decoding, and HDR</h4>
+                      
+<p>Aerial uses Apple's <a href="https://developer.apple.com/documentation/avfoundation">AVFoundation framework</a> to play the videos as your screen saver. When available, AVFoundation will use hardware decoding (from your CPU or your graphics card) to minimize the resources needed for video playback. You can find guidelines in the help button next to the <code>Preferred video format</code> setting. </p>
+<p>By default, Aerial uses 1080p H.264 videos which is the most compatible format. Please note that all 4K HEVC videos are encoded with the <code>Main10</code> profile, which may not be hardware accelerated by your machine, while some other HEVC videos (encoded in <code>Main</code> profile) will be.</p>
+
+<p>While we wish to provide everyone with the best setting for their machine, the GVA framework from Apple doesn't let us distinguish HEVC <code>Main10</code> profile acceleration from general HEVC acceleration. Early feedback we gathered also seems to point that on machines with multiple decoding options (Intel QuickSync and AMD UVD), QuickSync will always be preferred (even if you "force" the discrete GPU use with an external monitor or via code, as of macOS Mojave).</p>
+
+<p><b>These are our recommendations so far:</b></p>
+<ul><li>Macs older than 2011 may lack H.264 acceleration.</li>
+<li>Macs with an Intel CPU (With iGPU) from the Sandy Bridge (2011) generation to Broadwell (Early 2015) should have H.264 hardware acceleration available.</li>
+<li>Late 2015 and 2016 Macs (Skylake and Kaby Lake) may only have partially accelerated HEVC decoding. We recommended you stick to 1080p H.264 on laptops. You may consider the HEVC format on desktops but understand that decoding may be CPU intensive and spin up your fans.</li>
+<li>Macs 2017 and up should have full HEVC acceleration (the 2017 12 inch Macbook being a notable exception, only having partially accelerated HEVC decoding).</li></ul>
+
+<p>You can easily check for yourself what to expect by opening a video in Quicktime (Use the <code>Show in Finder</code> option in the <code>Cache</code> tab to find the cached videos). In Activity Monitor, the AV Framework GVA process is called <code>VTDecoderXPCService</code>.
+
+  <h4>About macOS Versions</h4>
+  <p>Because we use Apple's Framework, what is supported will depend on the version of macOS you use.</p>
+  <ul><li>You need at least macOS 10.13 to play HEVC videos</li>
+    <li>You need at least macOS 10.15 to play HDR videos</li></ul>       
+                    </div>
+                  </div>
+                  <!-- end content thing --> 
+
+                </div></div>
+
+<h3 id="ChangingFormat"> How to Change Your Video:</h3>
 
 <i>Skip to <b>step 4</b> if you have not downloaded any videos yet</i>
 
@@ -297,7 +340,10 @@ The short answer is:
 <br><br>
 <p>Videos in Aerial only play when they are cached on your computer. This allows them to play while you are not connected to the internet and always play immediately when your screen saver starts. </p>
 
-<p><i>Previous versions of Aerial could "stream" videos without downloading a cache, but this was replaced in 2.0 with the automatic cache management tool. </i></p>
+<div class="alert alert-primary" role="alert">
+  <i>Previous versions of Aerial could "stream" videos without downloading a cache, but this was replaced in 2.0 with the automatic cache management tool because these files are hosted by Apple and are not meant to be streamed. </i>
+</div>
+
 
 <p>The download rotation button is synonomous with saying "Cache my rotation". In other words, any videos in the <code>On Rotation</code> category on the left hand panel will begin to download to your computer when you click <code>Download Rotation</code>. </p>
 
@@ -344,7 +390,9 @@ The short answer is:
 <p>If you want to take advantage of adapted videos but without Night Shift, Light/Dark Mode, or Location Services, you can isntead set a specific time for Sunrise and Sunset and the videos will adapt based on that pre-set time</p>
 
 <h3 id="UseLightDarkMode">Adapt Videos Based on Light/Dark Mode</h3>
-<p style="color:red"><b>NOTE:</b> macOS 10.14 or newer is required for this setting.</p>
+<div class="alert alert-danger" role="alert">
+  <b>NOTE:</b> macOS 10.14 or newer is required for this setting.</div>
+
 <p>If you already have Light/Dark Mode enabled to switch automatically, this will allow the videos to be shown based on your <a href="https://support.apple.com/en-us/HT208976">Light or Dark Mode</a> settings. 
 
 <h3 id="DoNotAdapt">Do Not Adapt Videos</h3>
@@ -359,7 +407,10 @@ The short answer is:
 <ol><li>Open Aerial Settings in System Preferences</li>
   <li>Click on the <img width="30" alt="Gear" src="https://user-images.githubusercontent.com/18543749/90968117-a6b0b200-e4b6-11ea-98b7-ed7a131c2a00.png"> Settings Tab</li>
   <li>Click on <code>Advanced</code> in the sidebar</li>
-<br><b><p style="color:red">WARNING: The next stop cannot be undone</b></p>
+  
+  <br><div class="alert alert-danger" role="alert">  
+    <b>WARNING: The next stop cannot be undone</b></div><br>
+
   <li>Click <img width="140" alt="Reset All Settings" src="https://user-images.githubusercontent.com/18543749/90968132-e8415d00-e4b6-11ea-8e5b-11a09d83a6c9.png">
   <li>Once clicked, you will see the following popup and your settings will be reset</li>
   <img width="300" alt="Reset Confirmed" src="https://user-images.githubusercontent.com/18543749/90968135-fbecc380-e4b6-11ea-89aa-e80aa9eb3aa4.png">
