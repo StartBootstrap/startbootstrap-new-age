@@ -1,0 +1,16 @@
+{
+  "sources": [
+    {
+      "name": "Community Videos from Joshua Michaels & Hal Bergman",
+      "description": "Enjoy this contribution of aerial videos, if you want to support the artists and get more videos from them, press the More button below.",
+      "scenes": [
+        "landscape"
+      ],
+      "manifestUrl": "https://aerialscreensaver.github.io/community/entries.json",
+      "license": "https://jetsoncreative.com/aeriallicense",
+      "more": "https://magicwindow.app/aerial",
+      "local": false,
+      "cacheable": true
+    }
+  ]
+}
