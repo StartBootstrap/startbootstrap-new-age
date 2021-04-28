@@ -1,0 +1,164 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title New Age - Start Bootstrap Theme
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css', rel='stylesheet')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
+
+        // Plugin CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/html5-device-mockups/3.2.1/dist/device-mockups.min.css', rel='stylesheet')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
+                button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#download') Download
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#features') Features
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+
+        header.masthead
+            .container.h-100
+                .row.h-100
+                    .col-lg-7.my-auto
+                        .header-content.mx-auto
+                            h1.mb-5
+                                | New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
+                            a.btn.btn-outline-light.py-3.px-4.rounded-pill.js-scroll-trigger(href='#download') Start Now for Free!
+                    .col-lg-5.my-auto
+                        .device-wrapper
+                            .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
+                                .screen
+                                    // PUT CONTENTS HERE
+                                    img.img-fluid(src='assets/img/demo-screen-1.jpg', alt='...')
+                                .button
+                                    // You can hook the "home button" to some JavaScript events or just remove it
+
+        section#download.download.bg-primary.text-center
+            .container
+                .row
+                    .col-md-8.mx-auto
+                        h2.section-heading Discover what all the buzz is about!
+                        p Our app is available on any mobile device! Download now to get started!
+                        .badges
+                            a.badge-link(href='#!')
+                                img(src='assets/img/google-play-badge.svg', alt='...')
+                            a.badge-link(href='#!')
+                                img(src='assets/img/app-store-badge.svg', alt='...')
+
+        section#features.features
+            .container
+                .section-heading.text-center
+                    h2 Unlimited Features, Unlimited Fun
+                    p.text-muted Check out what you can do with this app theme!
+                    hr
+                .row
+                    .col-lg-4.my-auto
+                        .device-wrapper
+                            .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
+                                .screen
+                                    // PUT CONTENTS HERE
+                                    img.img-fluid(src='assets/img/demo-screen-1.jpg', alt='...')
+                                .button
+                                    // You can hook the "home button" to some JavaScript events or just remove it
+
+                    .col-lg-8.my-auto
+                        .container-fluid
+                            .row
+                                .col-lg-6
+                                    .feature-item
+                                        i.icon-screen-smartphone
+                                        h3 Device Mockups
+                                        p.text-muted Ready to use HTML/CSS device mockups, no Photoshop required!
+                                .col-lg-6
+                                    .feature-item
+                                        i.icon-camera
+                                        h3 Flexible Use
+                                        p.text-muted Put an image, video, animation, or anything else in the screen!
+                            .row
+                                .col-lg-6
+                                    .feature-item
+                                        i.icon-present
+                                        h3 Free to Use
+                                        p.text-muted As always, this theme is free to download and use for any purpose!
+                                .col-lg-6
+                                    .feature-item
+                                        i.icon-lock-open
+                                        h3 Open Source
+                                        p.text-muted Since this theme is MIT licensed, you can use it commercially!
+
+        section.cta
+            .cta-content
+                .container
+                    h2
+                        | Stop waiting.
+                        br
+                        | Start building.
+                    a.btn.btn-outline-light.py-3.px-4.rounded-pill.js-scroll-trigger(href='#contact') Let's Get Started!
+            .overlay
+
+        section#contact.contact.bg-primary
+            .container
+                h2
+                    | We
+                    i.text-danger.fas.fa-heart
+                    | new friends!
+                ul.list-inline.list-social
+                    li.list-inline-item.social-twitter
+                        a(href='#!')
+                            i.fab.fa-twitter
+                    li.list-inline-item.social-facebook
+                        a(href='#!')
+                            i.fab.fa-facebook-f
+                    li.list-inline-item.social-google-plus
+                        a(href='#!')
+                            i.fab.fa-google-plus-g
+
+        footer
+            .container
+                p &copy; Your Website 2021. All Rights Reserved.
+                ul.list-inline
+                    li.list-inline-item
+                        a(href='#!') Privacy
+                    li.list-inline-item
+                        a(href='#!') Terms
+                    li.list-inline-item
+                        a(href='#!') FAQ
+
+        // Bootstrap core JS
+        script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js')
+
+        // Custom scripts for this template
+        script(src='js/scripts.js')

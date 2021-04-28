@@ -1,0 +1,52 @@
+/*!
+ * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
+ * Copyright 2013 - 2017 pixelsign
+ * Licensed under MIT (https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE.txt)
+ * Last Build: Tue Nov 14 2017 12:40:57
+ */
+/*!
+ * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
+ * Copyright 2013 - 2017 pixelsign
+ * Licensed under MIT (https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE.txt)
+ * Last Build: Tue Nov 14 2017 12:39:20
+ */
+
+.device-wrapper {
+    max-width: 300px;
+    width: 100%;
+}
+
+.device {
+    position: relative;
+    background-size: cover;
+}
+
+.device .screen {
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.device .button {
+    position: absolute;
+    cursor: pointer;
+}
+
+.device[data-device="iPhone6Plus"][data-orientation="portrait"][data-color="white"] {
+    padding-bottom: 201.45161%;
+    background-image: url(https://cdnjs.cloudflare.com/ajax/libs/html5-device-mockups/3.2.1/device-mockups/iPhone6Plus/portrait_white.png);
+}
+
+.device[data-device="iPhone6Plus"][data-orientation="portrait"][data-color="white"] .screen {
+    top: 11.48919%;
+    left: 6.53226%;
+    width: 87.09677%;
+    height: 76.86149%;
+}
+
+.device[data-device="iPhone6Plus"][data-orientation="portrait"][data-color="white"] .button {
+    top: 90.43235%;
+    left: 43.30645%;
+    width: 13.3871%;
+    height: 6.64532%;
+}
