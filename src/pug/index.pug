@@ -12,17 +12,14 @@ html(lang='en')
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css', rel='stylesheet')
+        // Bootstrap icons
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
-
-        // Plugin CSS
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/html5-device-mockups/3.2.1/dist/device-mockups.min.css', rel='stylesheet')
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&display=swap', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -30,135 +27,155 @@ html(lang='en')
     body#page-top
 
         // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
-            .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top') Start Bootstrap
-                button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.shadow-sm
+            .container.px-5
+                a.navbar-brand.fw-bold(href='#page-top') Start Bootstrap
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
-                    i.fas.fa-bars
+                    i.bi-list
                 #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ml-auto
+                    ul.navbar-nav.ms-auto.me-4.my-3.my-lg-0
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#download') Download
+                            a.nav-link.me-lg-3(href='#features') Features
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#features') Features
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+                            a.nav-link.me-lg-3(href='#download') Download
+                    button.btn.btn-primary.rounded-pill.px-3.mb-2.mb-lg-0(data-bs-toggle='modal', data-bs-target='#feedbackModal')
+                        span.d-flex.align-items-center
+                            i.bi-chat-text-fill.me-2
+                            span.small Send Feedback
 
+        // Mashead header
         header.masthead
-            .container.h-100
-                .row.h-100
-                    .col-lg-7.my-auto
-                        .header-content.mx-auto
-                            h1.mb-5
-                                | New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
-                            a.btn.btn-outline-light.py-3.px-4.rounded-pill.js-scroll-trigger(href='#download') Start Now for Free!
-                    .col-lg-5.my-auto
-                        .device-wrapper
-                            .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
-                                .screen
-                                    // PUT CONTENTS HERE
-                                    img.img-fluid(src='assets/img/demo-screen-1.jpg', alt='...')
-                                .button
-                                    // You can hook the "home button" to some JavaScript events or just remove it
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-6
+                        // Mashead text and app badges
+                        .mb-5.mb-lg-0.text-center.text-lg-start
+                            h1.display-1.lh-1.mb-3 Showcase your app beautifully.
+                            p.lead.fw-normal.text-muted.mb-5 Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!
+                            .d-flex.flex-column.flex-lg-row.align-items-center
+                                a.me-lg-3.mb-4.mb-lg-0(href='#!')
+                                    img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+                                a(href='#!')
+                                    img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
+                    .col-lg-6
+                        // Masthead device mockup feature
+                        .masthead-device-mockup
+                            include includes/gradient-circle
+                            include includes/shape-1
+                            include includes/shape-2
+                            .device-wrapper
+                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                    .screen.bg-black
+                                        // PUT CONTENTS HERE:
+                                        // * * This can be a video, image, or just about anything else.
+                                        // * * Set the max width of your media to 100% and the height to
+                                        // * * 100% like the demo example below.
+                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
 
-        section#download.download.bg-primary.text-center
-            .container
-                .row
-                    .col-md-8.mx-auto
-                        h2.section-heading Discover what all the buzz is about!
-                        p Our app is available on any mobile device! Download now to get started!
-                        .badges
-                            a.badge-link(href='#!')
-                                img(src='assets/img/google-play-badge.svg', alt='...')
-                            a.badge-link(href='#!')
-                                img(src='assets/img/app-store-badge.svg', alt='...')
+        // Quote/testimonial aside
+        aside.text-center.bg-gradient-primary-to-secondary
+            .container.px-5
+                .row.gx-5.justify-content-center
+                    .col-xl-8
+                        .h2.fs-1.text-white.mb-4 "An intuitive solution to a common problem that we all face, wrapped up in a single app!"
+                        img(src='assets/img/tnw-logo.svg', alt='...', style='height: 3rem;')
 
-        section#features.features
-            .container
-                .section-heading.text-center
-                    h2 Unlimited Features, Unlimited Fun
-                    p.text-muted Check out what you can do with this app theme!
-                    hr
-                .row
-                    .col-lg-4.my-auto
-                        .device-wrapper
-                            .device(data-device='iPhone6' data-orientation='portrait' data-color='white')
-                                .screen
-                                    // PUT CONTENTS HERE
-                                    img.img-fluid(src='assets/img/demo-screen-1.jpg', alt='...')
-                                .button
-                                    // You can hook the "home button" to some JavaScript events or just remove it
-
-                    .col-lg-8.my-auto
-                        .container-fluid
+        // App features section
+        section#features
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-8.order-lg-1.mb-5.mb-lg-0
+                        .container-fluid.px-5
+                            .row.gx-5
+                                .col-md-6.mb-5
+                                    // Feature item
+                                    .text-center
+                                        i.bi-phone.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Device Mockups
+                                        p.text-muted.mb-0 Ready to use HTML/CSS device mockups, no Photoshop required!
+                                .col-md-6.mb-5
+                                    // Feature item
+                                    .text-center
+                                        i.bi-camera.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Flexible Use
+                                        p.text-muted.mb-0 Put an image, video, animation, or anything else in the screen!
                             .row
-                                .col-lg-6
-                                    .feature-item
-                                        i.icon-screen-smartphone
-                                        h3 Device Mockups
-                                        p.text-muted Ready to use HTML/CSS device mockups, no Photoshop required!
-                                .col-lg-6
-                                    .feature-item
-                                        i.icon-camera
-                                        h3 Flexible Use
-                                        p.text-muted Put an image, video, animation, or anything else in the screen!
-                            .row
-                                .col-lg-6
-                                    .feature-item
-                                        i.icon-present
-                                        h3 Free to Use
-                                        p.text-muted As always, this theme is free to download and use for any purpose!
-                                .col-lg-6
-                                    .feature-item
-                                        i.icon-lock-open
-                                        h3 Open Source
-                                        p.text-muted Since this theme is MIT licensed, you can use it commercially!
+                                .col-md-6.mb-5.mb-md-0
+                                    // Feature item
+                                    .text-center
+                                        i.bi-gift.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Free to Use
+                                        p.text-muted.mb-0 As always, this theme is free to download and use for any purpose!
+                                .col-md-6
+                                    // Feature item
+                                    .text-center
+                                        i.bi-patch-check.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Open Source
+                                        p.text-muted.mb-0 Since this theme is MIT licensed, you can use it commercially!
+                    .col-lg-4.order-lg-0
+                        // Features section device mockup
+                        .features-device-mockup
+                            include includes/gradient-circle
+                            include includes/shape-1
+                            include includes/shape-2
+                            .device-wrapper
+                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                    .screen.bg-black
+                                        // PUT CONTENTS HERE:
+                                        // * * This can be a video, image, or just about anything else.
+                                        // * * Set the max width of your media to 100% and the height to
+                                        // * * 100% like the demo example below.
+                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
 
+        // Basic features section
+        section.bg-light
+            .container.px-5
+                .row.gx-5.align-items-center.justify-content-center.justify-content-lg-between
+                    .col-12.col-lg-5
+                        h2.display-4.lh-1.mb-4 Enter a new age of web design
+                        p.lead.fw-normal.text-muted.mb-5.mb-lg-0 This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.
+                    .col-sm-8.col-md-6
+                        .px-5.px-sm-0
+                            img.img-fluid.rounded-circle(src='https://source.unsplash.com/u8Jn2rzYIps/900x900', alt='...')
+
+        // Call to action section
         section.cta
             .cta-content
-                .container
-                    h2
+                .container.px-5
+                    h2.text-white.display-1.lh-1.mb-4
                         | Stop waiting.
                         br
                         | Start building.
-                    a.btn.btn-outline-light.py-3.px-4.rounded-pill.js-scroll-trigger(href='#contact') Let's Get Started!
-            .overlay
+                    a.btn.btn-outline-light.py-3.px-4.rounded-pill(href='https://startbootstrap.com/theme/new-age', target='_blank') Download for free
 
-        section#contact.contact.bg-primary
-            .container
-                h2
-                    | We
-                    i.text-danger.fas.fa-heart
-                    | new friends!
-                ul.list-inline.list-social
-                    li.list-inline-item.social-twitter
-                        a(href='#!')
-                            i.fab.fa-twitter
-                    li.list-inline-item.social-facebook
-                        a(href='#!')
-                            i.fab.fa-facebook-f
-                    li.list-inline-item.social-google-plus
-                        a(href='#!')
-                            i.fab.fa-google-plus-g
+        // App badge section
+        section#download.bg-gradient-primary-to-secondary
+            .container.px-5
+                h2.text-center.text-white.font-alt.mb-4 Get the app now!
+                .d-flex.flex-column.flex-lg-row.align-items-center.justify-content-center
+                    a.me-lg-3.mb-4.mb-lg-0(href='#!')
+                        img.app-badge(src='assets/img/google-play-badge.svg', alt='...')
+                    a(href='#!')
+                        img.app-badge(src='assets/img/app-store-badge.svg', alt='...')
 
-        footer
-            .container
-                p &copy; Your Website 2021. All Rights Reserved.
-                ul.list-inline
-                    li.list-inline-item
-                        a(href='#!') Privacy
-                    li.list-inline-item
-                        a(href='#!') Terms
-                    li.list-inline-item
-                        a(href='#!') FAQ
+        // Footer
+        footer.bg-black.text-center.py-5
+            .container.px-5
+                .text-white-50.small
+                    .mb-2 &copy; Your Website 2021. All Rights Reserved.
+                    a(href='#!') Privacy
+                    span.mx-1 &middot;
+                    a(href='#!') Terms
+                    span.mx-1 &middot;
+                    a(href='#!') FAQ
+        
+        include includes/feedback-modal.pug
 
         // Bootstrap core JS
-        script(src='https://code.jquery.com/jquery-3.5.1.min.js')
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
 
-        // Third party plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js')
-
-        // Custom scripts for this template
+        // Core theme JS
         script(src='js/scripts.js')

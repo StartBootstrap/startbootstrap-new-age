@@ -4,12 +4,6 @@
  * Licensed under MIT (https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE.txt)
  * Last Build: Tue Nov 14 2017 12:40:57
  */
-/*!
- * html5-device-mockups (https://github.com/pixelsign/html5-device-mockups)
- * Copyright 2013 - 2017 pixelsign
- * Licensed under MIT (https://github.com/pixelsign/html5-device-mockups/blob/master/LICENSE.txt)
- * Last Build: Tue Nov 14 2017 12:39:20
- */
 
 .device-wrapper {
     max-width: 300px;
@@ -21,10 +15,18 @@
     background-size: cover;
 }
 
+.device::after {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
 .device .screen {
     position: absolute;
     background-size: cover;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .device .button {
@@ -32,21 +34,26 @@
     cursor: pointer;
 }
 
-.device[data-device="iPhone6Plus"][data-orientation="portrait"][data-color="white"] {
-    padding-bottom: 201.45161%;
-    background-image: url(https://cdnjs.cloudflare.com/ajax/libs/html5-device-mockups/3.2.1/device-mockups/iPhone6Plus/portrait_white.png);
+.device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] {
+    padding-bottom: 198.898071625%;
 }
 
-.device[data-device="iPhone6Plus"][data-orientation="portrait"][data-color="white"] .screen {
-    top: 11.48919%;
-    left: 6.53226%;
-    width: 87.09677%;
-    height: 76.86149%;
+.device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] .screen {
+    top: 3.1855955679%;
+    left: 6.8870523416%;
+    width: 86.2258953168%;
+    height: 93.6288088643%;
 }
 
-.device[data-device="iPhone6Plus"][data-orientation="portrait"][data-color="white"] .button {
-    top: 90.43235%;
-    left: 43.30645%;
-    width: 13.3871%;
-    height: 6.64532%;
+.device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"]::after {
+    content: '';
+    background-image: url('../assets/img/portrait_black.png');
+}
+
+.device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] .button {
+    display: none;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
 }

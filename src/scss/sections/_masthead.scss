@@ -1,55 +1,129 @@
-// Styling for the masthead
-header.masthead {
-    position: relative;
+// 
+// Masthead
+// 
 
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+.masthead {
+    background-color: $gray-100;
+    // Set top padding to 5rem plus the height of the fixed navbar
+    padding-top: 5rem + 4.5rem;
+    padding-bottom: 5rem;
 
-    color: white;
-    background: url('../assets/img/bg-pattern.png'), $secondary;
-    background: url('../assets/img/bg-pattern.png'), -webkit-linear-gradient(to left, $secondary, $tertiary);
-    background: url('../assets/img/bg-pattern.png'), linear-gradient(to left, $secondary, $tertiary);
+    // Styling for the iPhone X mockup in the masthead
+    .masthead-device-mockup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
-    .header-content {
-        max-width: 500px;
-        margin-bottom: 100px;
+        // SVG that sits behind the phone mockup
+        .circle {
+            position: absolute;
+            fill: url(#circleGradient);
+            width: 70%;
+            display: none;
 
-        text-align: center;
+            .gradient-start-color {
+                stop-color: $primary;
+            }
 
-        h1 {
-            font-size: 30px;
-        }
-    }
-
-    .device-container {
-        max-width: 325px;
-        margin-right: auto;
-        margin-left: auto;
-
-        .screen img {
-            border-radius: 3px;
-        }
-    }
-
-    @media (min-width: 992px) {
-        height: 100vh;
-        min-height: 775px;
-        padding-top: 0;
-        padding-bottom: 0;
-
-        .header-content {
-            margin-bottom: 0;
-
-            text-align: left;
-
-            h1 {
-                font-size: 50px;
+            .gradient-end-color {
+                stop-color: $secondary;
             }
         }
 
-        .device-container {
-            max-width: 325px;
+        // First shape to the bottom left of the mockup
+        .shape-1 {
+            position: absolute;
+            height: 1rem;
+            width: 1rem;
+            transform: rotate(-10deg);
+            fill: $primary;
+
+            bottom: 15%;
+            left: 10%;
+        }
+
+        // Second shape to the top right of the mockup
+        .shape-2 {
+            position: absolute;
+            height: 0.75rem;
+            width: 0.75rem;
+            fill: $primary;
+
+            top: 15%;
+            right: 10%;
+        }
+
+        // Set a max width for the device mockup on smallest screen sizes
+        .device-wrapper {
+            max-width: 10rem;
         }
     }
+
+    // Sizing for the device and SVG background circle (sm screen size breakpoint)
+    @include media-breakpoint-up(sm) {
+        .masthead-device-mockup {
+            .circle {
+                width: 70%;
+                display: block;
+            }
+
+            .device-wrapper {
+                max-width: 12.5rem;
+            }
+        }
+    }
+
+    // Sizing for the device and SVG background circle (md screen size breakpoint)
+    @include media-breakpoint-up(md) {
+        .masthead-device-mockup {
+            .circle {
+                width: 60%;
+            }
+
+            .device-wrapper {
+                max-width: 15rem;
+            }
+        }
+    }
+
+    // Sizing for the device and SVG background circle (lg screen size breakpoint)
+    @include media-breakpoint-up(lg) {
+        .masthead-device-mockup {
+            .circle {
+                width: 90%;
+            }
+
+            .device-wrapper {
+                max-width: 15rem;
+            }
+        }
+    }
+
+    // Sizing for the device and SVG background circle (xl screen size breakpoint)
+    @include media-breakpoint-up(xl) {
+        .masthead-device-mockup {
+            .circle {
+                width: 75%;
+            }
+
+            .device-wrapper {
+                max-width: 15rem;
+            }
+        }
+    }
+
+    // Sizing for the device and SVG background circle (xxl screen size breakpoint)
+    @include media-breakpoint-up(xxl) {
+        .masthead-device-mockup {
+            .circle {
+                width: 70%;
+            }
+
+            .device-wrapper {
+                max-width: 17rem;
+            }
+        }
+    }
+
 }

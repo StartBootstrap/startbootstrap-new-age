@@ -1,31 +1,47 @@
-// Global styling for this template
-html,
-body {
-    width: 100%;
-    height: 100%;
+// 
+// Global
+//
+
+// Scroll padding for all scroll targets on page used with
+// native CSS smooth scrolling
+// 
+// https://caniuse.com/?search=scroll-padding
+
+html {
+    scroll-padding-top: 4.5rem;
 }
 
-hr {
-    max-width: 100px;
-    margin: 25px auto 0;
-    border-width: 1px;
-    border-color: fade-out($gray-900, .9);
+// Custom utilities
+
+.bg-black {
+    background-color: $black !important;
 }
 
-hr.light {
-    border-color: white;
+.bg-gradient-primary-to-secondary {
+    background: linear-gradient(45deg, #{$primary}, #{$secondary}) !important;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+.font-alt {
+    font-family: $alt-font-family !important;
 }
 
+.text-gradient {
+    background: -webkit-linear-gradient(#{$primary}, #{$secondary});
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Padding for sections
+
+aside,
 section {
-    padding: 100px 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 
-    h2 {
-        font-size: 50px;
-    }
+// Set fixed height for app badges
+
+.app-badge {
+    height: 3rem;
 }

@@ -1,36 +1,26 @@
-// Styling for the call to action section
+// 
+// Call to action
+// 
+
 section.cta {
     position: relative;
-    padding: 250px 0;
-    background-image: url('../assets/img/bg-cta.jpg');
+    padding: 15rem 0;
+    background-image: url('https://source.unsplash.com/5g41N3uRPf8/1500x800');
     background-position: center;
     background-size: cover;
 
     .cta-content {
         position: relative;
         z-index: 1;
-
-        h2 {
-            font-size: 50px;
-            max-width: 450px;
-            margin-top: 0;
-            margin-bottom: 25px;
-            color: white;
-        }
-
-        @media (min-width: 768px) {
-            h2 {
-                font-size: 80px;
-            }
-        }
     }
 
-    .overlay {
+    &:before {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: fade-out(black, .5);
+        background: fade-out($black, 0.5);
     }
 }
