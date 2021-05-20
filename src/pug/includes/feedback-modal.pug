@@ -1,0 +1,23 @@
+// Feedback modal
+#feedbackModal.modal.fade(tabindex='-1', aria-labelledby='feedbackModalLabel', aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            .modal-header.bg-gradient-primary-to-secondary.p-4
+                h5#feedbackModalLabel.modal-title.font-alt.text-white Send feedback
+                button.btn-close.btn-close-white(type='button' data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.border-0.p-4
+                form
+                    .form-floating.mb-4
+                        input#inputName.form-control(type='text', placeholder='Enter your name...')
+                        label(for='inputName') Name
+                    .form-floating.mb-4
+                        input#inputEmail.form-control(type='email', placeholder='name@example.com')
+                        label(for='inputEmail') Email address
+                    .form-floating.mb-4
+                        input#inputPhone.form-control(type='tel', placeholder='(123) 456-7890')
+                        label(for='inputPhone') Phone number
+                    .form-floating.mb-4
+                        textarea#inputMessage.form-control(placeholder='Enter your message here...', style='height: 10rem;')
+                        label(for='inputMessage') Message
+                    .d-grid
+                        button.btn.btn-primary.rounded-pill.py-3(type='submit') Submit
